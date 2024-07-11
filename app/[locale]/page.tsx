@@ -1,5 +1,7 @@
 import HeroSection from "@/components/HeroSection";
+// import ProffesionalsSection from "@/components/ProffesionalsSection";
 import ServicesSection from "@/components/ServicesSection";
+import WhyUsSection from "@/components/WhyUsSection";
 
 
 export default function HomePage() {
@@ -8,6 +10,8 @@ export default function HomePage() {
     <>
       <HeroSection />
       <ServicesSection />
+      <WhyUsSection />
+      {/* <ProffesionalsSection />   */}
     </>
   );
 }

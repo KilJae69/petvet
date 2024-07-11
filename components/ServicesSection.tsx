@@ -1,11 +1,12 @@
 import PrimaryButton from "./shared/PrimaryButton";
 
+
 import { services } from "@/constants/data";
 import ServiceCard from "./ServiceCard";
 
 export default function ServicesSection() {
   return (
-    <section className="px-5 py-8 md:py-16 lg:py-24">
+    <section className=" pt-8 md:pt-16 lg:pt-24">
       <p className="text-clamp-md font-semibold leading-7 md:indent-52">
         Our goal is to provide tailored care, ensuring{" "}
         <span className="text-primary">
@@ -31,6 +32,7 @@ export default function ServicesSection() {
         {services.map((service, index) => (
           <ServiceCard key={index} {...service} />
         ))}
+        
       </div>
     </section>
   );
