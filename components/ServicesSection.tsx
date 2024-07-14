@@ -16,7 +16,7 @@ export default function ServicesSection() {
       </p>
 
       <div className=" my-10 flex flex-wrap justify-center gap-5 py-8   md:py-16 lg:py-24">
-        <div className="gradient-bg flex aspect-square max-w-[300px] flex-col justify-between rounded-3xl p-5 shadow-lg lg:max-w-[400px]">
+        <div className="gradient-bg flex aspect-square max-w-[300px] flex-col justify-between rounded-3xl p-5 shadow-lg xl:max-w-[400px]">
           <div className=" flex  flex-col gap-5 text-white">
             <h2 className="text-clamp-sm font-semibold uppercase">
               Our Services
@@ -29,8 +29,8 @@ export default function ServicesSection() {
           <PrimaryButton label="Book now" />
         </div>
 
-        {services.map((service, index) => (
-          <ServiceCard key={index} {...service} />
+        {services.map((service) => (
+          <ServiceCard key={service.id} {...service} />
         ))}
         
       </div>

@@ -1,4 +1,4 @@
-type Messages = typeof import("@/messages/en.json");
-type BsMessages = typeof import("@/messages/bs.json");
+// type Messages = typeof import("@/messages/en.json");
+// type BsMessages = typeof import("@/messages/bs.json");
 
-type IntlMessages = Messages & BsMessages;
+// type IntlMessages = Messages & BsMessages;

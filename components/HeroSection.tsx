@@ -38,6 +38,7 @@ export default function HeroSection() {
               priority
               fill
               className=" object-cover "
+              sizes="(min-width: 1340px) 700px, (min-width: 780px) calc(64.44vw - 151px), calc(100vw - 72px)"
             />
           </div>
           <div className=" absolute bottom-0 left-0 size-full">
