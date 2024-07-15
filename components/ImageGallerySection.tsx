@@ -7,7 +7,7 @@ import { useState } from "react";
 export default function ImageGallerySection() {
   const [displayedImg, setDisplayedImg] = useState(0);
   return (
-    <section className="pt-8 md:pt-16 lg:pt-24">
+    <section className="mt-10 pt-8 md:pt-16 lg:pt-24">
       <div className="flex  max-h-[600px] flex-col gap-3 sm:flex-row md:gap-10">
         <div className="grid grid-cols-3 gap-3 sm:min-w-[30%]  sm:flex-1 sm:grid-cols-2">
           {imageGallery.map((image, index) => (

@@ -8,7 +8,7 @@ import { faqData } from "@/constants/data";
 
 export default function FaqSection() {
   return (
-    <section className="pt-8 md:pt-16 lg:pt-24">
+    <section className="mt-10 pt-8 md:pt-16 lg:pt-24">
       <div className="mx-auto flex w-full max-w-[1600px] flex-col items-center  gap-4  ">
         <h2 className="text-clamp-lg font-semibold ">FAQ</h2>
 

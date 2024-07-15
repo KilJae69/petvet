@@ -38,8 +38,8 @@ export const navbarLinks = [
     title: "About",
     href: "/about",
   },
-  { id: 3, title: "Resources", href: "/resources" },
-  { id: 4, title: "Blog", href: "/blog" },
+  { id: 3, title: "Services", href: "/services" },
+  { id: 4, title: "Partners", href: "/partners" },
 ] as const;
 
 export const navbarMobileLinks = [
@@ -53,8 +53,8 @@ export const navbarMobileLinks = [
     title: "About",
     href: "/about",
   },
-  { id: 3, title: "Resources", href: "/resources" },
-  { id: 4, title: "Blog", href: "/blog" },
+  { id: 3, title: "Services", href: "/services" },
+  { id: 4, title: "Partners", href: "/partners" },
   { id: 5, title: "Contact Us", href: "/contact" },
 ] as const;
 
