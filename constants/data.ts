@@ -120,40 +120,29 @@ export const services = [
 export const proffesionals = [
   {
     id: 1,
-    name: "Dr. Jane Doe",
-    title: "Veterinarian",
+    name: "Emir Harbaš",
+    title: "dr. vet. med.",
     imageSrc: prof1Img,
   },
   {
     id: 2,
-    name: "Dr. Jane Doe",
-    title: "Veterinarian",
+    name: "Amra Fatić-Harbaš",
+    title: "dr. vet. med.",
     imageSrc: prof2Img,
   },
   {
     id: 3,
-    name: "Dr. Mark Doe",
-    title: "Veterinarian",
+    name: "Nermin Mahmutović",
+    title: "vet. tehnician",
     imageSrc: prof3Img,
   },
   {
     id: 4,
-    name: "Dr. John Doe",
-    title: "Veterinarian",
+    name: "Senad Hrkić",
+    title: "vet. tehnician",
     imageSrc: prof4Img,
   },
-  {
-    id: 5,
-    name: "Dr. John Doe",
-    title: "Veterinarian",
-    imageSrc: prof2Img,
-  },
-  {
-    id: 6,
-    name: "Dr. John Doe",
-    title: "Veterinarian",
-    imageSrc: prof1Img,
-  },
+  
 ] as const;
 
 export const testimonials = [

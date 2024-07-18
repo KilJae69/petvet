@@ -3,8 +3,10 @@ import PrimaryButton from "./shared/PrimaryButton";
 
 import { services } from "@/constants/data";
 import ServiceCard from "./ServiceCard";
+import { useTranslations } from "next-intl";
 
 export default function ServicesSection() {
+  const t = useTranslations('HeroSection');
   return (
     <section className=" pt-8 md:pt-16 lg:pt-24">
       <p className="text-clamp-md font-semibold leading-7 md:indent-52">

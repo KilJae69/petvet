@@ -1,10 +1,17 @@
 {
-    "Index": {
-      "title": "Hello world!",
-      "description": "Welcome to your new single-page application, built with:"
-    },
+    
     "Metadata":{
       "title": "PetVet",
       "description": "PetVet is a small veterinary practice located in Bihac, Bosnia and Herzegovina, specializing in the care of small pets. Our experienced team provides compassionate and comprehensive veterinary services to ensure the health and well-being of your beloved pets."
-    }
+    },
+    "HeroSection": {
+    "title": {
+      "part1": "Pet",
+      "part2": "Vet",
+      "subtitle": "your friendly neighbourhood veterinarian"
+    },
+    "description": "We prioritize your pet's health with love and expertise. Join us on a journey of care where your pet takes center stage.",
+    "contactButton": "Contact Us",
+    "successMessage": "Successfully treating your friends since 2010"
+  }
   }

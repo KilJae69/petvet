@@ -2,8 +2,10 @@ import Image from "next/image";
 import dogImg from "@/public/happy-dog.png";
 import pawImg from "@/public/dog-paw.svg";
 import PrimaryButton from "./shared/PrimaryButton";
+import { useTranslations } from "next-intl";
 
 export default function HeroSection() {
+  const t = useTranslations('HeroSection');
   return (
     <section className=" gradient-bg relative mt-[calc(var(--header-height)+20px)]  rounded-3xl px-5 pt-8 shadow-md  ">
       <div className="relative flex flex-col items-end md:flex-row md:justify-between lg:items-stretch">
@@ -11,22 +13,21 @@ export default function HeroSection() {
           <div className="flex flex-col gap-5 ">
             <h1 className="text-clamp-md font-bold text-white">
             <span className="text-clamp-max-xl uppercase">
-                Pet
+            {t('title.part1')}
               </span>
               <span className="text-clamp-max-xl uppercase text-accent">
-               Vet
+              {t('title.part2')}
               </span>{" "}
               <br />
-              your friendly neighbourhood veterinarian
+              {t('title.subtitle')}
             </h1>
             <p className="text-clamp-xs text-white">
-              We prioritize your pet&apos;s health with love and expertise. Join
-              us on a journey of care where your pet takes center stage.
+            {t('description')}
             </p>
-            <PrimaryButton label="Contact Us" />
+            <PrimaryButton label={t('contactButton')} />
           </div>
           <span className="hidden text-white md:block">
-            Succesfully treating your <br /> friends since 2010
+          {t('successMessage')}
           </span>
         </div>
 
@@ -51,23 +52,6 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* <div className=" relative aspect-square size-full max-w-[400px]   lg:max-w-[550px] ">
-          <div className="absolute -top-32 left-32  h-full w-[200px]">
-            <Image
-              className="object-contain "
-              fill
-              src={pawImg}
-              alt="Paw image"
-            />
-          </div>
-          <Image
-            src={dogImg}
-            alt="dog"
-            priority
-            fill
-            className="translate-y-[30%] object-cover  xs:translate-y-[27%] md:translate-y-[30%] lg:translate-y-1/4"
-          />
-        </div> */}
       </div>
     </section>
   );

@@ -5,8 +5,17 @@ import ProffesionalsSection from "@/components/ProffesionalsSection";
 import ServicesSection from "@/components/ServicesSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import WhyUsSection from "@/components/WhyUsSection";
+// eslint-disable-next-line camelcase
+import { unstable_setRequestLocale } from "next-intl/server";
 
-export default function HomePage() {
+type HomePageProps = {
+  params: {
+    locale: "en" | "bs";
+  };
+};
+
+export default function HomePage({ params: { locale } }: HomePageProps) {
+  unstable_setRequestLocale(locale);
   return (
     <>
       <HeroSection />

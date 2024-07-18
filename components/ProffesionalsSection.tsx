@@ -7,7 +7,9 @@ export default function ProffesionalsSection() {
     <section className="mt-10 flex flex-col items-center gap-10 pt-8 md:pt-16 lg:gap-20 lg:pt-24">
       <h2 className="text-clamp-lg font-semibold ">Our Proffesionals</h2>
 
-      <ProffesionalsSlider slides={proffesionals} />
+      <div className=" w-full  max-w-[1280px]">
+        <ProffesionalsSlider slides={proffesionals} />
+      </div>
     </section>
   );
 }

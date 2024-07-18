@@ -2,8 +2,10 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
+import 'swiper/css/free-mode';
 
 // import required modules
+import { FreeMode } from 'swiper/modules';
 
 import { proffesionals } from "@/constants/data";
 // import SliderNavButtons from "./SliderNavButtons";
@@ -16,15 +18,23 @@ type SliderProps = {
 
 export default function ProffesionalsSlider({ slides }: SliderProps) {
   return (
-    <Swiper slidesPerView="auto" spaceBetween={20} className="w-full  ">
+    <Swiper
+      slidesPerView="auto"
+      spaceBetween={20}
+      modules={[FreeMode]}
+     freeMode={true}
+      className="w-full "
+    >
       {/* <SliderNavButtons /> */}
-      <div className="w-full">
-        {slides.map((slide) => (
-          <SwiperSlide className="max-w-[300px] " key={slide.id}>
-            <ProffesionalCard proffesional={slide} />
-          </SwiperSlide>
-        ))}
-      </div>
+
+      {slides.map((slide) => (
+        <SwiperSlide
+          className=" max-w-[300px]"
+          key={slide.id}
+        >
+          <ProffesionalCard proffesional={slide} />
+        </SwiperSlide>
+      ))}
     </Swiper>
   );
 }

@@ -14,6 +14,7 @@ import Logo from "./shared/Logo";
 import MobileNavbarToggle from "./MobileNavbarToggle";
 import { MotionHeader } from "./shared/framer";
 import useSectionStore from "@/hooks/store/useSectionStore";
+import { LanguagePicker } from "./LanguagePicker";
 
 export default function Header() {
   const { scrollY } = useScroll();
@@ -88,6 +89,7 @@ export default function Header() {
           </nav>
           <div className="hidden md:block">
             <PrimaryButton label="Contact us" />
+            <LanguagePicker />
           </div>
         </div>
       </div>

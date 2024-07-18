@@ -25,6 +25,7 @@
   @apply bg-opacity-75;
 }
 
+
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
