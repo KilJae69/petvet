@@ -4,12 +4,14 @@ import { servicesNew } from "@/constants/data";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-import { getTranslations } from "next-intl/server";
+// eslint-disable-next-line camelcase
+import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { useTranslations } from "next-intl";
 
 type ServicePageSingleProps = {
   params: {
     slug: string;
+    locale: "en" | "bs";
   };
 };
 
@@ -18,11 +20,11 @@ type ServicePageSingleProps = {
 export async function generateMetadata({
   params,
 }: ServicePageSingleProps): Promise<Metadata> {
-  const serviceSlug = params.slug;
-  const singleService = servicesNew.find((service) => service.slug === serviceSlug);
+  const { slug, locale } = params;
+  const singleService = servicesNew.find((service) => service.slug === slug);
   if (!singleService) return notFound();
 
-  const t = await getTranslations("ServicesList");
+  const t = await getTranslations({ locale, namespace: "ServicesList" });
 
   return {
     title: t(singleService.titleKey),
@@ -39,13 +41,12 @@ export function generateStaticParams() {
 }
 
 
-export default function ServicePageSingle({params}: ServicePageSingleProps) {
+export default function ServicePageSingle({
+  params: { slug, locale },
+}: ServicePageSingleProps) {
+  unstable_setRequestLocale(locale);
   const t = useTranslations("ServicesList");
-
-  
-  
-
-  const singleServiceData = servicesNew.find((service) => service.slug === params.slug);
+  const singleServiceData = servicesNew.find((service) => service.slug === slug);
 
   if (!singleServiceData) return notFound();
 

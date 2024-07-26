@@ -29,11 +29,12 @@ type LocaleLayoutProps = {
 export async function generateMetadata({
   params: { locale },
 }: LocaleLayoutProps) {
+  unstable_setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "Metadata" });
 
   return {
-    title: t("title"),
-    description: t("description"),
+    title: t("titleHome"),
+    description: t("descriptionHome"),
   };
 }
 

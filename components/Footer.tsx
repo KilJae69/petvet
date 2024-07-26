@@ -19,7 +19,7 @@ export default function Footer() {
         <div className="flex flex-1 flex-col gap-5 md:justify-center md:p-10">
           <h2 className="text-clamp-md font-bold text-white">
             <span className=" ">{t("h2.part1")}</span>{" "}
-            <span className=" text-accent">{t("h2.part2")}</span> <br />
+            <span className="uppercase text-accent">{t("h2.part2")}</span> <br />
             {t("h2.part3")}
           </h2>
           <p className="text-clamp-xs text-white">{t("paragraph")}</p>

@@ -1,19 +1,35 @@
-
 import ContactForm from "@/components/ContactForm";
 import Image from "next/image";
 import dogoCalling from "@/public/dog-calling.png";
 import { PiBoneFill } from "react-icons/pi";
 import { FaMapLocationDot, FaPaperPlane, FaPhoneVolume } from "react-icons/fa6";
 import { useTranslations } from "next-intl";
+import { Metadata } from "next";
+// eslint-disable-next-line camelcase
+import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 
-export default function ContactPage() {
+type ContactPageProps = {
+  params: { locale: "en" | "bs" };
+};
 
-  const t = useTranslations("ContactPage")
+export async function generateMetadata({
+  params: { locale },
+}: ContactPageProps): Promise<Metadata> {
+  const t = await getTranslations({ locale, namespace: "Metadata" });
+
+  return {
+    title: t("titleContact"),
+    description: t("descriptionContact"),
+  };
+}
+
+export default function ContactPage({ params: { locale } }: ContactPageProps) {
+  unstable_setRequestLocale(locale);
+  const t = useTranslations("ContactPage");
   return (
-    <section >
+    <section>
       <div className=" gradient-bg relative mt-[calc(var(--header-height)+20px)] rounded-3xl px-5 py-8 text-center shadow-md  ">
         <h1 className="text-clamp-lg font-bold text-white">{t("h1")}</h1>
-    
       </div>
 
       <div className="relative my-10 flex flex-col-reverse gap-5 rounded-3xl bg-white shadow-md sm:p-4 lg:flex-row-reverse lg:justify-around xl:gap-20">
@@ -24,10 +40,10 @@ export default function ContactPage() {
               <span className="text-primary">PetVet</span> {t("h1")}
             </h2>
             <p className="text-clamp-lg font-bold">
-            {t("large-paragraph-right")}
+              {t("large-paragraph-right")}
             </p>
             <p className="text-clamp-sm text-black/70">
-            {t("medium-paragraph-right")}
+              {t("medium-paragraph-right")}
             </p>
           </div>
           <ContactForm className="lg:max-w-[650px]" />
@@ -37,6 +53,7 @@ export default function ContactPage() {
           <div className="gradient-bg relative aspect-square w-full max-w-[400px] rounded-full ">
             <Image
               fill
+              sizes="(min-width: 920px) 400px, (min-width: 780px) calc(76.67vw - 290px), (min-width: 540px) 400px, calc(92.73vw - 82px)"
               src={dogoCalling}
               className="object-contain"
               alt="Dog holding can and trying to call"
@@ -44,7 +61,8 @@ export default function ContactPage() {
 
             <div className="absolute bottom-0 left-1/2 w-full -translate-x-1/2 rounded-3xl bg-white p-6 text-center shadow-md">
               <p className="text-clamp-xs font-semibold">
-                &quot;<span className="text-primary">Woof!</span> {t("woof-paragraph")}&quot;
+                &quot;<span className="text-primary">Woof!</span>{" "}
+                {t("woof-paragraph")}&quot;
               </p>
             </div>
           </div>
@@ -58,7 +76,7 @@ export default function ContactPage() {
                 <span>
                   <h3 className="font-bold text-primary">{t("phone-h3")}</h3>
                   <p className="font-semibold">
-                  {t("phone-p")} <br />
+                    {t("phone-p")} <br />
                     <span className="text-primary">
                       (037)222-660 <br /> (061)415-098
                     </span>
@@ -72,7 +90,7 @@ export default function ContactPage() {
                 <span>
                   <h3 className="font-bold text-primary">{t("email-h3")}</h3>
                   <p className="font-semibold">
-                  {t("email-p")} <br />
+                    {t("email-p")} <br />
                     <span className="text-primary">
                       petvet.bihac@bih.net.ba <br /> petvet@gmail.com
                     </span>
@@ -85,7 +103,9 @@ export default function ContactPage() {
                 </span>
                 <span>
                   <h3 className="font-bold text-primary">{t("location-h3")}</h3>
-                  <p className="font-semibold">Bužimska bb, Ozimice 1, 77 000 Bihać</p>
+                  <p className="font-semibold">
+                    Bužimska bb, Ozimice 1, 77 000 Bihać
+                  </p>
                 </span>
               </li>
             </ul>

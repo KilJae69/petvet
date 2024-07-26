@@ -1,15 +1,19 @@
 {
   "Metadata": {
-    "title": "PetVet",
-    "description": "PetVet is a small veterinary practice located in Bihac, Bosnia and Herzegovina, specializing in the care of small pets. Our experienced team provides compassionate and comprehensive veterinary services to ensure the health and well-being of your beloved pets."
+    "titleHome": "PetVet | Home",
+    "descriptionHome": "PetVet is a small veterinary practice located in Bihac, Bosnia and Herzegovina, specializing in the care of small pets. Our experienced team provides compassionate and comprehensive veterinary services to ensure the health and well-being of your beloved pets.",
+    "titleServices": "PetVet | Services",
+    "descriptionServices": "Explore PetVet's comprehensive range of pet care services designed to meet all your pet's needs. From balanced nutrition and professional grooming to regular health check-ups and essential vaccinations, our team of dedicated professionals is here to ensure your pet's health and happiness. Discover how we can support you in providing the best care for your furry friend.",
+    "titleContact": "PetVet | Contact",
+    "descriptionContact": "Get in touch with PetVet for all your pet care needs. Whether you have questions about our services, need to schedule an appointment, or seek advice on pet health, our team is here to help. Contact us via phone, email, or visit our location for personalized care and support."
   },
-  "Header":{
-    "link-home":"Home",
-    "link-about":"About",
-    "link-services":"Services",
-    "contact-button":"Contact us",
-    "language-button":"Language",
-    "language-option-bs":"Bosnian",
+  "Header": {
+    "link-home": "Home",
+    "link-about": "About",
+    "link-services": "Services",
+    "contact-button": "Contact us",
+    "language-button": "Language",
+    "language-option-bs": "Bosnian",
     "language-option-en": "English"
   },
   "HeroSection": {
@@ -23,6 +27,7 @@
     "successMessage": "Successfully treating your friends since 2010"
   },
   "ServicesSection": {
+    "singlePageH1": "Services",
     "marqueeText": {
       "part1": "Our goal is to provide tailored care, ensuring",
       "part2": " each pet receives the attention necessary",
@@ -68,9 +73,9 @@
   },
   "ServicesList": {
     "link": "Learn more",
-    "singlePageTitleAbout":"About The Service",
-    "singlePageTitleWhat":"What’s Part Of The Service",
-    "singlePageTitleWhy":"Why You Should Take The Service",
+    "singlePageTitleAbout": "About The Service",
+    "singlePageTitleWhat": "What’s Part Of The Service",
+    "singlePageTitleWhy": "Why You Should Take The Service",
     "GeneralCare": {
       "title": "General Care and Treatment",
       "description": "Comprehensive health care for pets including dogs, cats, reptiles, and rodents.",
@@ -224,33 +229,33 @@
       "answer": "To prevent your pet from getting sick, you should provide them with a balanced diet, regular exercise, and plenty of fresh water. It is also important to keep your pet up to date on their vaccinations and take them to the vet for regular check-ups."
     }
   },
-  "ContactPage":{
-    "h1":"Contact Us",
-    "large-paragraph-right":"PetVet Services Delivered Here.",
-    "medium-paragraph-right":"Caring for a pet involves a holistic approach that addresses their physical health, emotional well-being and happiness.",
-    "woof-paragraph":"I'm here to help, give me a call!",
-    "phone-h3":"Call Us Now",
-    "phone-p":"Call us when you need us!",
-    "email-h3":"Email Address",
-    "email-p":"We are usually replying within 24 hours",
-    "location-h3":"Our Location"
+  "ContactPage": {
+    "h1": "Contact Us",
+    "large-paragraph-right": "PetVet Services Delivered Here.",
+    "medium-paragraph-right": "Caring for a pet involves a holistic approach that addresses their physical health, emotional well-being and happiness.",
+    "woof-paragraph": "I'm here to help, give me a call!",
+    "phone-h3": "Call Us Now",
+    "phone-p": "Call us when you need us!",
+    "email-h3": "Email Address",
+    "email-p": "We are usually replying within 24 hours",
+    "location-h3": "Our Location"
   },
-  "ContactForm":{
+  "ContactForm": {
     "name": "Your First Name",
-    "subject":"Message Subject",
-    "text-area":"How can we help you? Feel free to get in touch!",
+    "subject": "Message Subject",
+    "text-area": "How can we help you? Feel free to get in touch!",
     "button": "Get in touch"
   },
-  "Footer":{
-    "h2":{
+  "Footer": {
+    "h2": {
       "part1": "Get",
       "part2": "free",
       "part3": "consultations"
     },
     "paragraph": "At our veterinary clinic, consultations provide comprehensive insights into your pet's health and well-being.",
-    "button":"Contact us",
+    "button": "Contact us",
     "paragraph-secondary": "Join us on a journey of care where your pet takes center stage.",
-    "small-text-left":"© 2024 PetVet. All rights reserved.",
-    "small-text-right":"Website developed and maintained by"
+    "small-text-left": "© 2024 PetVet. All rights reserved.",
+    "small-text-right": "Website developed and maintained by"
   }
 }

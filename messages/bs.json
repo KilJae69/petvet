@@ -1,7 +1,11 @@
 {
   "Metadata": {
-    "title": "PetVet",
-    "description": "PetVet je mala veterinarska praksa smještena u Bihaću, Bosna i Hercegovina, specijalizirana za brigu o malim ljubimcima. Naš iskusni tim pruža saosjećajne i sveobuhvatne veterinarske usluge kako bi osigurali zdravlje i dobrobit vaših voljenih ljubimaca."
+    "titleHome": "PetVet | Naslovna",
+    "descriptionHome": "PetVet je mala veterinarska praksa smještena u Bihaću, Bosna i Hercegovina, specijalizirana za brigu o malim ljubimcima. Naš iskusni tim pruža saosjećajne i sveobuhvatne veterinarske usluge kako bi osigurali zdravlje i dobrobit vaših voljenih ljubimaca.",
+    "titleServices": "PetVet | Usluge",
+    "descriptionServices": "Istražite sveobuhvatan asortiman PetVet usluga za brigu o ljubimcima, dizajniranih da zadovolje sve potrebe vašeg ljubimca. Od uravnotežene ishrane i profesionalnog uređivanja do redovnih zdravstvenih pregleda i neophodnih vakcinacija, naš tim posvećenih profesionalaca je tu da osigura zdravlje i sreću vašeg ljubimca. Otkrijte kako vam možemo pomoći u pružanju najbolje njege za vašeg krznenog prijatelja.",
+    "titleContact": "PetVet | Kontakt",
+    "descriptionContact": "Kontaktirajte PetVet za sve vaše potrebe u vezi s brigom o ljubimcima. Bilo da imate pitanja o našim uslugama, trebate zakazati termin ili tražite savjet o zdravlju ljubimaca, naš tim je tu da vam pomogne. Kontaktirajte nas putem telefona, emaila ili posjetite našu lokaciju za personaliziranu brigu i podršku."
   },
   "Header":{
     "link-home":"Početna",
@@ -23,6 +27,7 @@
     "successMessage": "Uspješno liječimo vaše prijatelje od 2010."
   },
   "ServicesSection": {
+    "singlePageH1":"Usluge",
     "marqueeText": {
       "part1": "Naš cilj je pružiti prilagođenu njegu, osiguravajući da",
       "part2": " svaki ljubimac dobije potrebnu pažnju",
