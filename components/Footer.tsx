@@ -9,26 +9,25 @@ import { MapProvider } from "@/providers/map-provider";
 import { MapComponent } from "./shared/GoogleMap";
 import { FaPhone } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { useTranslations } from "next-intl";
 
 export default function Footer() {
+  const t = useTranslations("Footer");
   return (
-    <footer className="container mx-auto mt-10 max-w-[1970px] pt-8 md:pt-16 lg:pt-24">
-      <div className="gradient-bg relative flex w-full flex-col rounded-3xl px-5 pt-8 md:flex-row">
+    <footer className="container mx-auto  max-w-[1970px] ">
+      <div className="gradient-bg relative flex w-full flex-col items-stretch rounded-3xl px-5 pt-4 shadow-md 2md:flex-row">
         <div className="flex flex-1 flex-col gap-5 md:justify-center md:p-10">
-          <h1 className="text-clamp-lg font-bold text-white">
-            <span className=" ">Get</span>{" "}
-            <span className=" text-accent">free</span> <br />
-            consultation
-          </h1>
-          <p className="text-clamp-xs text-white">
-            At our veterinary clinic, consultations provide comprehensive
-            insights into your pet&apos;s health and well-being.
-          </p>
-          <PrimaryButton label="Contact Us" />
+          <h2 className="text-clamp-md font-bold text-white">
+            <span className=" ">{t("h2.part1")}</span>{" "}
+            <span className=" text-accent">{t("h2.part2")}</span> <br />
+            {t("h2.part3")}
+          </h2>
+          <p className="text-clamp-xs text-white">{t("paragraph")}</p>
+          <PrimaryButton label={t("button")} />
         </div>
 
-        <div className="relative flex size-full  items-end justify-end ">
-          <div className="relative z-10 aspect-square size-full min-h-[200px] max-w-[400px] ">
+        <div className="relative flex size-full flex-1 items-end justify-end   ">
+          <div className="relative z-10 aspect-square size-full max-w-[400px] md:min-h-[200px] ">
             <Image
               src={puppyImg}
               alt="dog"
@@ -42,6 +41,7 @@ export default function Footer() {
             <Image
               className="object-contain "
               fill
+              sizes="(min-width: 940px) 400px, (min-width: 780px) calc(24.29vw + 177px), (min-width: 500px) 400px, calc(95.56vw - 59px)"
               src={pawImg}
               alt="Paw image"
             />
@@ -51,11 +51,9 @@ export default function Footer() {
 
       <div className="flex flex-col gap-3 pt-9">
         <div className="flex flex-col items-center justify-between gap-3 md:flex-row md:gap-10">
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col items-center justify-center gap-3 py-5 text-center">
             <Logo />
-            <p className="text-black/50">
-              Join us on a journey of care where your pet takes center stage.
-            </p>
+            <p className=" text-black/50">{t("paragraph-secondary")}</p>
           </div>
 
           <div>
@@ -65,7 +63,7 @@ export default function Footer() {
             </span>
             <span className="flex items-center gap-3 text-xl">
               <MdEmail className=" text-accent" />
-              petvet@email.com
+              petvet@gmail.com
             </span>
           </div>
 
@@ -79,9 +77,9 @@ export default function Footer() {
         <Separator orientation="horizontal" className="bg-primaryAccent/60" />
 
         <div className="flex w-full flex-col justify-between gap-3 py-4 text-xs md:flex-row lg:text-sm">
-          <p>© 2024 PetVet. All rights reserved.</p>
+          <p>{t("small-text-left")}</p>
           <p>
-            Website developed and maintained by{" "}
+            {t("small-text-right")}{" "}
             <span className="text-yellow-400">Spark</span>Studio
           </p>
         </div>

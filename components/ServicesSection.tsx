@@ -1,40 +1,36 @@
-import PrimaryButton from "./shared/PrimaryButton";
+import { PiBoneFill } from "react-icons/pi";
 
-
-import { services } from "@/constants/data";
-import ServiceCard from "./ServiceCard";
+import ServicesList from "./shared/ServicesList";
 import { useTranslations } from "next-intl";
 
 export default function ServicesSection() {
-  const t = useTranslations('HeroSection');
+  const t = useTranslations('ServicesSection');
   return (
     <section className=" pt-8 md:pt-16 lg:pt-24">
       <p className="text-clamp-md font-semibold leading-7 md:indent-52">
-        Our goal is to provide tailored care, ensuring{" "}
+      { t("marqueeText.part1")}{" "}
         <span className="text-primary">
-          each pet receives the attention necessary
+        { t("marqueeText.part2")}
         </span>{" "}
-        and personalized for their age and health condition.
+        { t("marqueeText.part3")}
       </p>
 
-      <div className=" my-10 flex flex-wrap justify-center gap-5 py-8   md:py-16 lg:py-24">
-        <div className="gradient-bg flex aspect-square max-w-[300px] flex-col justify-between rounded-3xl p-5 shadow-lg xl:max-w-[400px]">
-          <div className=" flex  flex-col gap-5 text-white">
-            <h2 className="text-clamp-sm font-semibold uppercase">
-              Our Services
-            </h2>
-            <p className="text-white/80">
-              At our friendly veterinary clinic, counsultations provide
-              comprehensive insights into your pet&apos;s health and well-being.
-            </p>
-          </div>
-          <PrimaryButton label="Book now" />
+      <div className="  flex flex-col justify-center gap-5 py-8 md:py-16   lg:gap-20 lg:py-24">
+        <div className="mx-auto max-w-[1000px] space-y-6 p-5 text-center">
+          <h2 className="flex items-center justify-center gap-2 font-semibold">
+            <PiBoneFill className="size-6 text-primary" />
+            <span className="block text-primary">PetVet</span> { t("h2")}
+          </h2>
+          <p className="text-clamp-lg font-bold">
+          { t("leadTitle")} <span className="text-primary">PetVet</span>{" "}
+            { t("h2")}
+          </p>
+          <p className="text-clamp-sm text-black/70">
+          { t("description")}
+          </p>
         </div>
 
-        {services.map((service) => (
-          <ServiceCard key={service.id} {...service} />
-        ))}
-        
+        <ServicesList />
       </div>
     </section>
   );

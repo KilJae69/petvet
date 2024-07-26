@@ -8,7 +8,7 @@ export default function ProffesionalCard({
   proffesional,
 }: ProffesionalCardProps) {
   return (
-    <div className="flex cursor-grab flex-col gap-3">
+    <div className="flex cursor-grab flex-col gap-3 xl:cursor-auto">
       <div className="gradient-bg relative aspect-[300/400] rounded-3xl">
         <Image
           src={proffesional.imageSrc}

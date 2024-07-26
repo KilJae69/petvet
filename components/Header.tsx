@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from "@/navigation";
 
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { useEffect, useState } from "react";
@@ -15,12 +15,15 @@ import MobileNavbarToggle from "./MobileNavbarToggle";
 import { MotionHeader } from "./shared/framer";
 import useSectionStore from "@/hooks/store/useSectionStore";
 import { LanguagePicker } from "./LanguagePicker";
+import { useTranslations } from "next-intl";
+
 
 export default function Header() {
   const { scrollY } = useScroll();
   const [hidden, setHidden] = useState(false);
 
   const pathname = usePathname();
+  const t = useTranslations("Header")
 
   const {
     isHeroSectionVisible: heroInView,
@@ -56,15 +59,16 @@ export default function Header() {
       }}
       animate={hidden ? "hidden" : "visible"}
       transition={{ duration: 0.3, ease: "easeInOut" }}
-      className={`fixed inset-x-0 top-0 z-50 mx-auto h-header-height max-w-[1970px] rounded-3xl border border-white bg-white px-4 py-2.5 shadow-lg shadow-black/[0.03] md:px-8 lg:px-16`}
+      className={`fixed inset-x-0 top-0 z-50 mx-auto h-header-height  border border-white bg-white px-4 py-2.5 shadow-lg shadow-black/[0.03] md:px-4 lg:px-16`}
     >
-      <div className="container flex size-full items-center justify-between">
+      <div className="max-w-[2000px] mx-auto flex size-full items-center justify-between">
         <Logo />
-        <div className="flex items-center gap-5">
-          <div className="block xl:hidden">
+        <div className="flex items-center lg:gap-5">
+          <div className="flex gap-2 md:hidden">
             <MobileNavbarToggle />
+            <LanguagePicker />
           </div>
-          <nav className="mr-10 hidden xl:block">
+          <nav className="mr-10 hidden md:block">
             <ul
               className={`flex gap-5 font-semibold text-black xl:text-xl
               
@@ -75,7 +79,7 @@ export default function Header() {
                 return (
                   <li className="group relative" key={link.id}>
                     <Link className={`cursor-pointer`} href={link.href}>
-                      {link.title}
+                      {t(link.title)}
                     </Link>
                     <span
                       className={`absolute -bottom-1 left-0 h-[2px] w-0  bg-black transition-all duration-500 group-hover:w-full
@@ -87,9 +91,10 @@ export default function Header() {
               })}
             </ul>
           </nav>
-          <div className="hidden md:block">
-            <PrimaryButton label="Contact us" />
+          <div className="hidden items-center gap-5 md:flex">
+            <PrimaryButton label= {t("contact-button")} />
             <LanguagePicker />
+           
           </div>
         </div>
       </div>

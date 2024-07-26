@@ -1,10 +1,18 @@
 {
-    
-    "Metadata":{
-      "title": "PetVet",
-      "description": "PetVet is a small veterinary practice located in Bihac, Bosnia and Herzegovina, specializing in the care of small pets. Our experienced team provides compassionate and comprehensive veterinary services to ensure the health and well-being of your beloved pets."
-    },
-    "HeroSection": {
+  "Metadata": {
+    "title": "PetVet",
+    "description": "PetVet is a small veterinary practice located in Bihac, Bosnia and Herzegovina, specializing in the care of small pets. Our experienced team provides compassionate and comprehensive veterinary services to ensure the health and well-being of your beloved pets."
+  },
+  "Header":{
+    "link-home":"Home",
+    "link-about":"About",
+    "link-services":"Services",
+    "contact-button":"Contact us",
+    "language-button":"Language",
+    "language-option-bs":"Bosnian",
+    "language-option-en": "English"
+  },
+  "HeroSection": {
     "title": {
       "part1": "Pet",
       "part2": "Vet",
@@ -13,5 +21,236 @@
     "description": "We prioritize your pet's health with love and expertise. Join us on a journey of care where your pet takes center stage.",
     "contactButton": "Contact Us",
     "successMessage": "Successfully treating your friends since 2010"
+  },
+  "ServicesSection": {
+    "marqueeText": {
+      "part1": "Our goal is to provide tailored care, ensuring",
+      "part2": " each pet receives the attention necessary",
+      "part3": "and personalized for their age and health condition."
+    },
+    "h2": "Services",
+    "leadTitle": "Here are our special",
+    "description": "Pet care encompasses a wide range of responsibilities, from feeding and grooming to regular check-ups and vaccinations. Our team of professionals is here to help you with all your pet care needs."
+  },
+  "WhyUsSection": {
+    "h2": "Why Us",
+    "title1": "Tailored Approach to Each Pet",
+    "description1": "We understand that every pet is unique and has different needs.That&apos;s why we take a tailored approach to each pet, ensuring that they receive personalized care and attention. Our team of experienced professionals will work closely with you to develop acustomized treatment plan that meets your pet&apos;s specific requirements. Whether it&apos;s a routine check-up or a complex medical procedure, you can trust us to provide the highest level of care for your beloved pet.",
+    "title2": "Ease and Convenience for Pet Owners",
+    "description2": "We strive to make your experience as a pet owner as convenient as possible. Our clinic offers flexible appointment times, easy online booking, and a welcoming environment for both you and your pet. From the moment you walk in, you&apos;ll find our friendly staff ready to assist you with all your needs, making every visit smooth and stress-free.",
+    "title3": "Comprehensive Care and Expert Advice",
+    "description3": "Our clinic provides a full spectrum of veterinary services to ensure your pet&apos;s overall health and well-being. From preventive care and routine check-ups to specialized treatments and surgeries, our team is equipped to handle all aspects of your pet&apos;s healthcare. Additionally, we offer expert advice on nutrition, behavior, and lifestyle to help you make informed decisions for your pet&apos;s care.",
+    "title4": "State-of-the-Art Equipment and Advanced Techniques",
+    "description4": "Our clinic is equipped with the latest veterinary technology and advanced diagnostic tools to provide the highest standard of care for your pet. We continually update our techniques and equipment to stay at the forefront of veterinary medicine. This ensures that your pet receives the most effective and up-to-date treatment available."
+  },
+  "ProffesionalsSection": {
+    "h2": "Our Proffesionals"
+  },
+  "TestimonialsSection": {
+    "h2": "Our clients testimonials"
+  },
+  "TestimonialsSlider": {
+    "1": {
+      "name": "Azra Toromanović",
+      "subtitle": "Owner of the cat Mili",
+      "text": "I am very satisfied with the service I received. The staff is very professional and friendly. I would recommend this clinic to everyone."
+    },
+    "2": {
+      "name": "Ljilja Doe",
+      "subtitle": "Owner of the dog Max",
+      "text": "I am very satisfied with the service I received. The staff is very professional and friendly. I would recommend this clinic to everyone."
+    },
+    "3": {
+      "name": "Michael Doe",
+      "subtitle": "Owner of the dog Max",
+      "text": "I am very satisfied with the service I received. The staff is very professional and friendly. I would recommend this clinic to everyone."
+    }
+  },
+  "ServicesList": {
+    "link": "Learn more",
+    "singlePageTitleAbout":"About The Service",
+    "singlePageTitleWhat":"What’s Part Of The Service",
+    "singlePageTitleWhy":"Why You Should Take The Service",
+    "GeneralCare": {
+      "title": "General Care and Treatment",
+      "description": "Comprehensive health care for pets including dogs, cats, reptiles, and rodents.",
+      "imageAlt": "Close-up veterinary doctor taking care of a pet",
+      "aboutSection": "Our General Care and Treatment service is designed to provide comprehensive health care for pets, including dogs, cats, reptiles, and rodents. We focus on ensuring your pets receive the best possible care through a range of services that cater to their health and well-being.",
+      "whySection": "Choosing our General Care and Treatment service ensures your pet receives top-notch medical attention from experienced veterinarians. Our holistic approach to pet care includes preventive measures and thorough treatment plans tailored to each pet's unique needs. We are dedicated to maintaining your pet's health and happiness, making us a trusted partner in their care.",
+      "included": {
+        "1": {
+          "title": "Pre-Anesthetic Examination and Surgical Planning",
+          "description": "Thorough evaluations before any surgical procedure to ensure safety and optimal outcomes."
+        },
+        "2": {
+          "title": "Protective Vaccinations",
+          "description": "Regular vaccinations to protect pets from various diseases, ensuring their long-term health."
+        },
+        "3": {
+          "title": "Emergency Case Management",
+          "description": "Swift and effective treatment for urgent medical conditions."
+        },
+        "4": {
+          "title": "Issuance of Passports and National Database Registration",
+          "description": "Facilitating the necessary documentation for pet travel and ensuring they are registered with national authorities."
+        }
+      }
+    },
+    "Laboratory": {
+      "title": "Laboratory Diagnostics",
+      "description": "Extensive lab services for accurate diagnostics and treatment planning.",
+      "imageAlt": "Close-up scientist using microscope",
+      "aboutSection": "Our Laboratory Diagnostics service offers extensive lab testing to ensure accurate diagnostics and effective treatment plans for your pets. Our state-of-the-art laboratory facilities enable us to perform a wide range of tests to monitor and manage your pet’s health.",
+      "whySection": "Accurate diagnostics are crucial for effective treatment. Our Laboratory Diagnostics service provides precise and reliable results, enabling our veterinarians to develop targeted treatment plans. With our advanced lab facilities, you can trust us to provide the best care for your pet.",
+      "included": {
+        "1": {
+          "title": "Complete Blood Count (Hematological and Biochemical Tests)",
+          "description": "Comprehensive blood tests to assess overall health."
+        },
+        "2": {
+          "title": "Microscopic Examination",
+          "description": "Detailed analysis of blood smears, aspirates, scrapings, swabs, and sediments."
+        },
+        "3": {
+          "title": "Parasitological Tests",
+          "description": "Detection of parasitic infections."
+        },
+        "4": {
+          "title": "Rapid SNAP Tests",
+          "description": "Quick testing for various diseases such as parvovirus, distemper, tick-borne diseases, heartworm, leishmaniasis, adenovirus, influenza virus, coronavirus, giardia, and feline-specific tests (FIV/FeLV, panleukopenia, giardia)."
+        }
+      }
+    },
+    "Surgery": {
+      "title": "Surgery",
+      "description": "Specialized surgical procedures for soft tissue, maxillofacial, eye, and dental surgeries.",
+      "imageAlt": "Close-up hands touching a dog preping for surgery",
+      "aboutSection": "Our Surgery service offers specialized surgical procedures performed by skilled veterinarians. We are equipped to handle a variety of surgeries, ensuring your pet receives the best possible care in a safe and controlled environment.",
+      "whySection": "Our experienced surgical team is dedicated to providing the highest standard of care during every procedure. We use the latest techniques and equipment to ensure successful outcomes and swift recovery for your pet. Trust us for all your pet’s surgical needs.",
+      "included": {
+        "1": {
+          "title": "Soft Tissue Surgery",
+          "description": "Surgical procedures involving internal organs and soft tissues."
+        },
+        "2": {
+          "title": "Maxillofacial Surgery",
+          "description": "Surgeries related to the jaws and face."
+        },
+        "3": {
+          "title": "Eye and Eyelid Surgery",
+          "description": "Procedures to address ocular and eyelid conditions."
+        },
+        "4": {
+          "title": "Dental Surgery",
+          "description": "Comprehensive dental care including extractions and oral surgery."
+        },
+        "5": {
+          "title": "Castration/Sterilization",
+          "description": "Safe and effective spaying and neutering services."
+        }
+      }
+    },
+    "Reproduction": {
+      "title": "Reproduction and Obstetrics",
+      "description": "Expert care in reproductive health and childbirth assistance.",
+      "imageAlt": "Sleepy puppies on vet couch",
+      "aboutSection": "Our Reproduction and Obstetrics service provides expert care in reproductive health and childbirth. We support pet owners through every stage of their pet's reproductive cycle, from conception to delivery.",
+      "whySection": "Reproductive health is vital for breeding pets. Our specialized services ensure the health and safety of both mother and offspring. With our expertise, you can be confident in successful breeding and healthy litters.",
+      "included": {
+        "1": {
+          "title": "Diagnosis and Treatment of Urogenital Diseases",
+          "description": "Comprehensive care for reproductive system health."
+        },
+        "2": {
+          "title": "Determination of Fertile Days",
+          "description": "Accurate prediction of optimal breeding times."
+        },
+        "3": {
+          "title": "Assistance with Natural Childbirth",
+          "description": "Professional support during the birthing process."
+        },
+        "4": {
+          "title": "Cesarean Section",
+          "description": "Safe surgical delivery when necessary."
+        }
+      }
+    },
+    "Other": {
+      "title": "Other Services",
+      "description": "Additional services including vaccination, microchipping, and grooming.",
+      "imageAlt": "Shaving process of a small dog",
+      "aboutSection": "In addition to our core services, we offer a variety of other essential services to support your pet's health and well-being. Our goal is to provide comprehensive care to meet all your pet's needs.",
+      "whySection": "Our additional services are designed to complement our primary offerings, providing all-around care for your pet. From preventive measures to specialized treatments, we ensure your pet stays healthy and happy. Choose our clinic for a full spectrum of veterinary care.",
+      "included": {
+        "1": {
+          "title": "Ultrasonic Removal of Dental Tartar",
+          "description": "Advanced dental cleaning to maintain oral health."
+        },
+        "2": {
+          "title": "Sample Collection and Submission to Reference Laboratories",
+          "description": "Precise sample collection for further analysis in specialized labs."
+        },
+        "3": {
+          "title": "Microchipping",
+          "description": "Permanent identification to ensure your pet can always be found."
+        },
+        "4": {
+          "title": "Grooming",
+          "description": "Regular grooming services to keep your pet looking and feeling their best."
+        }
+      }
+    }
+  },
+  "FAQSection": {
+    "heading": "FAQ",
+    "question1": {
+      "question": "What is the best food for my pet?",
+      "answer": "The best food for your pet is the one that is balanced and provides all the necessary nutrients. It is important to consult with your veterinarian to determine the best diet for your pet."
+    },
+    "question2": {
+      "question": "How often should I take my pet to the vet?",
+      "answer": "It is recommended to take your pet to the vet at least once a year for a check-up. However, if your pet is sick or has any health issues, you should take them to the vet as soon as possible."
+    },
+    "question3": {
+      "question": "How can I keep my pet healthy?",
+      "answer": "To keep your pet healthy, you should provide them with a balanced diet, regular exercise, and plenty of fresh water. It is also important to take your pet to the vet for regular check-ups and vaccinations."
+    },
+    "question4": {
+      "question": "What should I do if my pet is sick?",
+      "answer": "If your pet is sick, you should take them to the vet as soon as possible. It is important to consult with your veterinarian to determine the best course of action for your pet's health."
+    },
+    "question5": {
+      "question": "How can I prevent my pet from getting sick?",
+      "answer": "To prevent your pet from getting sick, you should provide them with a balanced diet, regular exercise, and plenty of fresh water. It is also important to keep your pet up to date on their vaccinations and take them to the vet for regular check-ups."
+    }
+  },
+  "ContactPage":{
+    "h1":"Contact Us",
+    "large-paragraph-right":"PetVet Services Delivered Here.",
+    "medium-paragraph-right":"Caring for a pet involves a holistic approach that addresses their physical health, emotional well-being and happiness.",
+    "woof-paragraph":"I'm here to help, give me a call!",
+    "phone-h3":"Call Us Now",
+    "phone-p":"Call us when you need us!",
+    "email-h3":"Email Address",
+    "email-p":"We are usually replying within 24 hours",
+    "location-h3":"Our Location"
+  },
+  "ContactForm":{
+    "name": "Your First Name",
+    "subject":"Message Subject",
+    "text-area":"How can we help you? Feel free to get in touch!",
+    "button": "Get in touch"
+  },
+  "Footer":{
+    "h2":{
+      "part1": "Get",
+      "part2": "free",
+      "part3": "consultations"
+    },
+    "paragraph": "At our veterinary clinic, consultations provide comprehensive insights into your pet's health and well-being.",
+    "button":"Contact us",
+    "paragraph-secondary": "Join us on a journey of care where your pet takes center stage.",
+    "small-text-left":"© 2024 PetVet. All rights reserved.",
+    "small-text-right":"Website developed and maintained by"
   }
-  }
+}

@@ -1,44 +1,39 @@
 "use client";
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-
-// import required modules
 import { Navigation } from "swiper/modules";
-import { testimonials } from "@/constants/data";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
+import { testimonials } from "@/constants/data";
 
-type SliderProps = {
-  slides: typeof testimonials;
-};
+export default function TestimonialsSlider() {
+  const t = useTranslations("TestimonialsSlider");
 
-export default function TestimonialsSlider({ slides }: SliderProps) {
   return (
     <Swiper
       navigation={true}
       modules={[Navigation]}
       className="lg:max-w-[60%] "
     >
-      {slides.map((slide) => (
-        <SwiperSlide className="" key={slide.id}>
+      {testimonials.map((slide) => (
+        <SwiperSlide className="cursor-grab" key={slide.id}>
           <div className="flex flex-col items-center gap-8">
             <p className="text-clamp-md text-center font-semibold ">
-              &quot;{slide.text}&quot;
+              &quot;{t(slide.textKey)}&quot;
             </p>
             <div className="flex items-center gap-4">
               <Image
                 src={slide.imageSrc}
                 width={60}
                 height={60}
-                alt={slide.name}
+                alt={t(slide.nameKey)}
                 className="rounded-3xl"
               />
               <div>
-                <h3 className="font-semibold">{slide.name}</h3>
-                <p className="italic text-black/70">{slide.subtitle}</p>
+                <h3 className="font-semibold">{t(slide.nameKey)}</h3>
+                <p className="italic text-black/70">{t(slide.subtitleKey)}</p>
               </div>
             </div>
           </div>

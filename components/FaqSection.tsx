@@ -5,16 +5,18 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { faqData } from "@/constants/data";
+import { useTranslations } from "next-intl";
 
 export default function FaqSection() {
+  const t = useTranslations("FAQSection");
   return (
     <section className="mt-10 pt-8 md:pt-16 lg:pt-24">
       <div className="mx-auto flex w-full max-w-[1600px] flex-col items-center  gap-4  ">
-        <h2 className="text-clamp-lg font-semibold ">FAQ</h2>
+        <h2 className="text-clamp-lg font-semibold ">{t("heading")}</h2>
 
         <Accordion
           type="single"
-          className="flex w-full flex-col gap-4 lg:max-w-[60%]"
+          className="flex min-h-[670px] w-full flex-col gap-4 md:min-h-[600px] lg:max-w-[60%]"
           collapsible
         >
           {faqData.map((faq) => (
@@ -24,9 +26,9 @@ export default function FaqSection() {
               value={`item-${faq.id}`}
             >
               <AccordionTrigger className="text-clamp-xs w-full gap-2 font-semibold">
-                {faq.question}
+                {t(faq.questionKey)}
               </AccordionTrigger>
-              <AccordionContent>{faq.answer}</AccordionContent>
+              <AccordionContent>{t(faq.answerKey)}</AccordionContent>
             </AccordionItem>
           ))}
         </Accordion>

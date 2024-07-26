@@ -2,7 +2,7 @@
 import {  navbarMobileLinks } from "@/constants/data";
 
 
-import Link from "next/link";
+import { Link } from "@/navigation";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 import { Separator } from "./ui/separator";
@@ -11,13 +11,15 @@ import useNavbarStore from "@/hooks/store/useNavbarStore";
 import Logo from "./shared/Logo";
 import MobileNavbarToggle from "./MobileNavbarToggle";
 import SocialLinks from "./shared/SocialLinks";
+import { useTranslations } from "next-intl";
 
 
 export default function MobileNavbar() {
   const { isNavbarOpen, toggleNavbar } = useNavbarStore();
+  const t = useTranslations("Header")
   return (
     <div
-      className={`fixed inset-0 z-50 h-screen bg-primary px-5 transition-all duration-500
+      className={`fixed inset-0 z-50 h-screen bg-black px-5 transition-all duration-500
     ${
       isNavbarOpen
         ? "translate-y-0 opacity-100"
@@ -45,7 +47,7 @@ export default function MobileNavbar() {
                 className="transition-colors group-hover:text-white"
                 href={link.href}
               >
-                {link.title}
+                {t(link.title)}
               </Link>
               <FaArrowRightLong className="text-sm transition-all group-hover:translate-x-2 group-hover:text-white" />
             </li>

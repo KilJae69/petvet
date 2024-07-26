@@ -1,10 +1,18 @@
 {
-    
-    "Metadata":{
-      "title": "PetVet",
-      "description": "PetVet je mala veterinarska praksa smještena u Bihaću, Bosna i Hercegovina, specijalizirana za brigu o malim ljubimcima. Naš iskusni tim pruža saosjećajne i sveobuhvatne veterinarske usluge kako bi osigurali zdravlje i dobrobit vaših voljenih ljubimaca."
-    },
-    "HeroSection": {
+  "Metadata": {
+    "title": "PetVet",
+    "description": "PetVet je mala veterinarska praksa smještena u Bihaću, Bosna i Hercegovina, specijalizirana za brigu o malim ljubimcima. Naš iskusni tim pruža saosjećajne i sveobuhvatne veterinarske usluge kako bi osigurali zdravlje i dobrobit vaših voljenih ljubimaca."
+  },
+  "Header":{
+    "link-home":"Početna",
+    "link-about":"O nama",
+    "link-services":"Usluge",
+    "contact-button":"Kontaktirajte nas",
+    "language-button":"Jezik",
+    "language-option-bs":"Bosanski",
+    "language-option-en": "Engleski"
+  },
+  "HeroSection": {
     "title": {
       "part1": "Pet",
       "part2": "Vet",
@@ -13,5 +21,236 @@
     "description": "Prioritet nam je zdravlje vašeg ljubimca s ljubavlju i stručnošću. Pridružite nam se na putovanju brige gdje vaš ljubimac ima centralno mjesto.",
     "contactButton": "Kontaktirajte nas",
     "successMessage": "Uspješno liječimo vaše prijatelje od 2010."
+  },
+  "ServicesSection": {
+    "marqueeText": {
+      "part1": "Naš cilj je pružiti prilagođenu njegu, osiguravajući da",
+      "part2": " svaki ljubimac dobije potrebnu pažnju",
+      "part3": "i personaliziranu skrb prema njihovoj dobi i zdravstvenom stanju."
+    },
+    "h2": "usluge",
+    "leadTitle": "Ovo su naše",
+    "description": "Njega kućnih ljubimaca obuhvata širok spektar odgovornosti, od hranjenja i uređivanja do redovnih pregleda i vakcinacija. Naš tim profesionalaca je tu da vam pomogne sa svim potrebama u vezi njege vaših kućnih ljubimaca."
+  },
+  "WhyUsSection": {
+    "h2": "Zašto izabrati nas",
+    "title1": "Prilagođen pristup svakom ljubimcu",
+    "description1": "Razumijemo da je svaki ljubimac jedinstven i ima različite potrebe. Zato pristupamo svakom ljubimcu na individualan način, osiguravajući da dobije personaliziranu njegu i pažnju. Naš tim iskusnih profesionalaca će blisko sarađivati s vama kako bi razvio prilagođen plan liječenja koji zadovoljava specifične zahtjeve vašeg ljubimca. Bilo da se radi o rutinskom pregledu ili složenom medicinskom zahvatu, možete nam vjerovati da ćemo pružiti najviši nivo njege za vašeg voljenog ljubimca.",
+    "title2": "Jednostavnost i praktičnost za vlasnike ljubimaca",
+    "description2": "Nastojimo da vaše iskustvo kao vlasnika ljubimca učinimo što je moguće praktičnijim. Naša klinika nudi fleksibilne termine za sastanke, jednostavno online zakazivanje i ugodno okruženje za vas i vašeg ljubimca. Od trenutka kada uđete, naći ćete naše ljubazno osoblje spremno da vam pomogne sa svim vašim potrebama, čineći svaku posjetu glatkom i bez stresa.",
+    "title3": "Sveobuhvatna njega i stručni savjeti",
+    "description3": "Naša klinika pruža širok spektar veterinarskih usluga kako bi osigurali cjelokupno zdravlje i dobrobit vašeg ljubimca. Od preventivne njege i rutinskih pregleda do specijaliziranih tretmana i operacija, naš tim je opremljen za rukovanje svim aspektima zdravstvene njege vašeg ljubimca. Dodatno, nudimo stručne savjete o ishrani, ponašanju i načinu života kako bismo vam pomogli da donesete informirane odluke o njezi vašeg ljubimca.",
+    "title4": "Najmodernija oprema i napredne tehnike",
+    "description4": "Naša klinika je opremljena najnovijom veterinarskom tehnologijom i naprednim dijagnostičkim alatima kako bi pružila najviši standard njege za vašeg ljubimca. Kontinuirano unapređujemo naše tehnike i opremu kako bismo ostali na čelu veterinarske medicine. Ovo osigurava da vaš ljubimac prima najefikasniji i najnoviji dostupni tretman."
+  },
+  "ProffesionalsSection": {
+    "h2": "Naše Osoblje"
+  },
+  "TestimonialsSection": {
+    "h2": "Izjave naših zadovoljnih klijenata"
+  },
+  "TestimonialsSlider": {
+    "1": {
+      "name": "Azra Toromanović",
+      "subtitle": "Vlasnica mačke Mili",
+      "text": "Veoma sam zadovoljna uslugom koju sam dobila. Osoblje je veoma profesionalno i ljubazno. Preporučila bih ovu kliniku svima."
+    },
+    "2": {
+      "name": "Ljilja Doe",
+      "subtitle": "Vlasnica psa Max",
+      "text": "Veoma sam zadovoljna uslugom koju sam dobila. Osoblje je veoma profesionalno i ljubazno. Preporučila bih ovu kliniku svima."
+    },
+    "3": {
+      "name": "Michael Doe",
+      "subtitle": "Vlasnik psa Max",
+      "text": "Veoma sam zadovoljna uslugom koju sam dobila. Osoblje je veoma profesionalno i ljubazno. Preporučila bih ovu kliniku svima."
+    }
+  },
+ "ServicesList": {
+  "link":"Saznaj više",
+  "singlePageTitleAbout": "O Usluzi",
+  "singlePageTitleWhat": "Šta Je Dio Usluge",
+  "singlePageTitleWhy": "Zašto Biste Trebali Koristiti Uslugu",
+    "GeneralCare": {
+      "title": "Opća Njega i Liječenje",
+      "description": "Sveobuhvatna zdravstvena njega za kućne ljubimce uključujući pse, mačke, reptile i glodare.",
+      "imageAlt": "Veterinar koji brine o kućnom ljubimcu",
+      "aboutSection": "Naša usluga Opće Njege i Liječenja je dizajnirana da pruži sveobuhvatnu zdravstvenu njegu za kućne ljubimce, uključujući pse, mačke, reptile i glodare. Fokusiramo se na osiguranje najbolje moguće njege kroz niz usluga koje zadovoljavaju njihove zdravstvene potrebe.",
+      "whySection": "Odabirom naše usluge Opće Njege i Liječenja osiguravate da vaš ljubimac dobije vrhunsku medicinsku pažnju od iskusnih veterinara. Naš holistički pristup njezi ljubimaca uključuje preventivne mjere i detaljne planove liječenja prilagođene svakom ljubimcu. Posvećeni smo održavanju zdravlja i sreće vašeg ljubimca, čineći nas pouzdanim partnerom u njihovoj njezi.",
+      "included": {
+        "1": {
+          "title": "Pre-Anestetički Pregled i Planiranje Operacije",
+          "description": "Detaljne procjene prije bilo kojeg kirurškog zahvata kako bi se osigurala sigurnost i optimalni rezultati."
+        },
+        "2": {
+          "title": "Zaštitna Cijepljenja",
+          "description": "Redovita cijepljenja za zaštitu ljubimaca od raznih bolesti, osiguravajući njihovo dugoročno zdravlje."
+        },
+        "3": {
+          "title": "Upravljanje Hitnim Slučajevima",
+          "description": "Brz i učinkovit tretman za hitna medicinska stanja."
+        },
+        "4": {
+          "title": "Izdavanje Pasosa i Registracija u Nacionalnoj Bazi",
+          "description": "Omogućavanje potrebne dokumentacije za putovanja ljubimaca i osiguravanje njihove registracije kod nacionalnih vlasti."
+        }
+      }
+    },
+    "Laboratory": {
+      "title": "Laboratorijska Dijagnostika",
+      "description": "Opsežne laboratorijske usluge za tačnu dijagnostiku i planiranje liječenja.",
+      "imageAlt": "Naučnik koristi mikroskop",
+      "aboutSection": "Naša usluga Laboratorijske Dijagnostike nudi opsežne laboratorijske pretrage kako bi se osigurala tačna dijagnostika i učinkoviti planovi liječenja za vaše ljubimce. Naše vrhunske laboratorijske mogućnosti omogućuju nam da obavljamo širok raspon testova za praćenje i upravljanje zdravljem vašeg ljubimca.",
+      "whySection": "Tačna dijagnostika je ključna za učinkovito liječenje. Naša usluga Laboratorijske Dijagnostike pruža precizne i pouzdane rezultate, omogućujući našim veterinarima da razviju ciljanje planove liječenja. S našim naprednim laboratorijskim mogućnostima, možete nam vjerovati da ćemo pružiti najbolju njegu za vašeg ljubimca.",
+      "included": {
+        "1": {
+          "title": "Kompletna Krvna Slika (Hematološki i Biokemijski Testovi)",
+          "description": "Sveobuhvatni krvni testovi za procjenu općeg zdravlja."
+        },
+        "2": {
+          "title": "Mikroskopski Pregled",
+          "description": "Detaljna analiza krvnih razmaza, aspirata, strugotina, briseva i sedimenta."
+        },
+        "3": {
+          "title": "Parazitološki Testovi",
+          "description": "Otkrivanje parazitskih infekcija."
+        },
+        "4": {
+          "title": "Brzi SNAP Testovi",
+          "description": "Brzi testovi za razne bolesti poput parvovirusa, štenećaka, bolesti prenosivih krpeljima, srčanih crva, lišmanijaze, adenovirusa, virusa influence, koronavirusa, giardije, te testovi specifični za mačke (FIV/FeLV, panleukopenija, giardija)."
+        }
+      }
+    },
+    "Surgery": {
+      "title": "Kirurgija",
+      "description": "Specijalizirani kirurški zahvati za meka tkiva, maksilofacijalnu kirurgiju, operacije oka i stomatološke zahvate.",
+      "imageAlt": "Ruke koje pripremaju psa za operaciju",
+      "aboutSection": "Naša usluga Kirurgije nudi specijalizirane kirurške zahvate koje izvode vješti veterinari. Opremljeni smo za obavljanje različitih operacija, osiguravajući da vaš ljubimac dobije najbolju moguću njegu u sigurnom i kontroliranom okruženju.",
+      "whySection": "Naš iskusni kirurški tim posvećen je pružanju najvišeg standarda njege tijekom svakog zahvata. Koristimo najnovije tehnike i opremu kako bismo osigurali uspješne ishode i brzi oporavak vašeg ljubimca. Vjerujte nam za sve kirurške potrebe vašeg ljubimca.",
+      "included": {
+        "1": {
+          "title": "Kirurgija Mekih Tkiva",
+          "description": "Kirurški zahvati koji uključuju unutarnje organe i meka tkiva."
+        },
+        "2": {
+          "title": "Maksilofacijalna Kirurgija",
+          "description": "Operacije povezane s čeljustima i licem."
+        },
+        "3": {
+          "title": "Kirurgija Oka i Kapaka",
+          "description": "Zahvati za rješavanje stanja oka i kapaka."
+        },
+        "4": {
+          "title": "Stomatološka Kirurgija",
+          "description": "Sveobuhvatna stomatološka njega uključujući vađenja i oralnu kirurgiju."
+        },
+        "5": {
+          "title": "Kastracija/Sterilizacija",
+          "description": "Sigurne i učinkovite usluge sterilizacije i kastracije."
+        }
+      }
+    },
+    "Reproduction": {
+      "title": "Reprodukcija i Porod",
+      "description": "Stručna njega u reproduktivnom zdravlju i asistenciji pri porodu.",
+      "imageAlt": "Pospani štenci na veterinarskom stolu",
+      "aboutSection": "Naša usluga Reprodukcije i Poroda pruža stručnu njegu u reproduktivnom zdravlju i asistenciji pri porodu. Podržavamo vlasnike kućnih ljubimaca kroz svaku fazu reproduktivnog ciklusa njihovog ljubimca, od začeća do poroda.",
+      "whySection": "Reproduktivno zdravlje je ključno za uzgojne ljubimce. Naše specijalizirane usluge osiguravaju zdravlje i sigurnost majke i potomaka. S našom stručnošću, možete biti sigurni u uspješan uzgoj i zdrava legla.",
+      "included": {
+        "1": {
+          "title": "Dijagnoza i Liječenje Urogenitalnih Bolesti",
+          "description": "Sveobuhvatna njega za zdravlje reproduktivnog sistema."
+        },
+        "2": {
+          "title": "Određivanje Plodnih Dana",
+          "description": "Tačno predviđanje optimalnih vremena za parenje."
+        },
+        "3": {
+          "title": "Asistencija Pri Prirodnom Porodu",
+          "description": "Profesionalna podrška tijekom procesa poroda."
+        },
+        "4": {
+          "title": "Carski Rez",
+          "description": "Siguran kirurški porod kada je potrebno."
+        }
+      }
+    },
+    "Other": {
+      "title": "Ostale Usluge",
+      "description": "Dodatne usluge uključujući cijepljenje, mikročipiranje i šišanje.",
+      "imageAlt": "Proces šišanja malog psa",
+      "aboutSection": "Osim naših osnovnih usluga, nudimo razne druge bitne usluge za podršku zdravlju i dobrobiti vašeg ljubimca. Naš cilj je pružiti sveobuhvatnu njegu koja zadovoljava sve potrebe vašeg ljubimca.",
+      "whySection": "Naše dodatne usluge su dizajnirane da upotpune naše primarne ponude, pružajući sveobuhvatnu njegu za vašeg ljubimca. Od preventivnih mjera do specijaliziranih tretmana, osiguravamo da vaš ljubimac ostane zdrav i sretan. Odaberite našu kliniku za potpunu veterinarsku njegu.",
+      "included": {
+        "1": {
+          "title": "Ultrazvučno Uklanjanje Zubnog Kamenca",
+          "description": "Napredno čišćenje zuba za održavanje oralnog zdravlja."
+        },
+        "2": {
+          "title": "Prikupljanje Uzoraka i Slanje u Referentne Laboratorije",
+          "description": "Precizno prikupljanje uzoraka za dalju analizu u specijaliziranim laboratorijama."
+        },
+        "3": {
+          "title": "Mikročipiranje",
+          "description": "Trajna identifikacija kako bi se osiguralo da se vaš ljubimac uvijek može pronaći."
+        },
+        "4": {
+          "title": "Šišanje",
+          "description": "Redovne usluge šišanja kako bi vaš ljubimac izgledao i osjećao se najbolje."
+        }
+      }
+    }
+  },
+  "FAQSection": {
+    "heading": "Česta Pitanja",
+    "question1": {
+      "question": "Koja je najbolja hrana za mog ljubimca?",
+      "answer": "Najbolja hrana za vašeg ljubimca je ona koja je uravnotežena i pruža sve potrebne hranjive tvari. Važno je konzultirati se s vašim veterinarom kako biste odredili najbolju ishranu za vašeg ljubimca."
+    },
+    "question2": {
+      "question": "Koliko često trebam voditi svog ljubimca veterinaru?",
+      "answer": "Preporučuje se da vodite svog ljubimca veterinaru barem jednom godišnje na pregled. Međutim, ako je vaš ljubimac bolestan ili ima zdravstvenih problema, trebali biste ga odvesti veterinaru što je prije moguće."
+    },
+    "question3": {
+      "question": "Kako mogu održati svog ljubimca zdravim?",
+      "answer": "Da biste održali svog ljubimca zdravim, trebali biste mu osigurati uravnoteženu ishranu, redovitu tjelovježbu i dovoljno svježe vode. Također je važno voditi svog ljubimca veterinaru na redovite preglede i vakcinacije."
+    },
+    "question4": {
+      "question": "Šta trebam učiniti ako je moj ljubimac bolestan?",
+      "answer": "Ako je vaš ljubimac bolestan, trebali biste ga odvesti veterinaru što je prije moguće. Važno je konzultirati se s vašim veterinarom kako biste odredili najbolji način liječenja za zdravlje vašeg ljubimca."
+    },
+    "question5": {
+      "question": "Kako mogu spriječiti da se moj ljubimac razboli?",
+      "answer": "Da biste spriječili da se vaš ljubimac razboli, trebali biste mu osigurati uravnoteženu ishranu, redovitu tjelovježbu i dovoljno svježe vode. Također je važno da vaš ljubimac bude vakcinisan i da ga redovno vodite veterinaru na preglede."
+    }
+  },
+  "ContactPage": {
+    "h1": "Kontaktirajte Nas",
+    "large-paragraph-right": "PetVet usluge dostupne ovdje.",
+    "medium-paragraph-right": "Briga o ljubimcu podrazumijeva holistički pristup koji uključuje njihovo fizičko zdravlje, emocionalnu dobrobit i sreću.",
+    "woof-paragraph": "Tu sam da pomognem, nazovite me!",
+    "phone-h3": "Nazovite Nas",
+    "phone-p": "Nazovite nas kada vam trebamo!",
+    "email-h3": "Email Adresa",
+    "email-p": "Obično odgovaramo u roku od 24 sata",
+    "location-h3": "Naša Lokacija"
+  },
+  "ContactForm": {
+    "name": "Vaše Ime",
+    "subject": "Naslov Poruke",
+    "text-area": "Kako vam možemo pomoći? Slobodno nas kontaktirajte!",
+    "button": "Kontaktirajte nas"
+  },
+  "Footer": {
+    "h2": {
+      "part1": "Dobijte",
+      "part2": "besplatne",
+      "part3": "konsultacije"
+    },
+    "paragraph": "U našoj veterinarskoj klinici, konsultacije pružaju sveobuhvatan uvid u zdravlje i dobrobit vašeg ljubimca.",
+    "button":"Kontaktirajte nas",
+    "paragraph-secondary": "Pridružite nam se na putu brige gdje vaš ljubimac zauzima središnje mjesto.",
+    "small-text-left": "© 2024 PetVet. Sva prava zadržana.",
+    "small-text-right": "Web stranicu razvio i održava"
   }
-  }
+}

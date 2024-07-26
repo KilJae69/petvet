@@ -50,7 +50,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <body className={`relative ${poppins.className} h-[3000px] bg-slate-100`}>
+      <body className={`relative ${poppins.className} bg-slate-100`}>
         <NextIntlClientProvider messages={messages}>
           <Header />
           <MobileNavbar />
