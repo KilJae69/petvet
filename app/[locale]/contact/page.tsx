@@ -3,18 +3,32 @@ import Image from "next/image";
 import dogoCalling from "@/public/dog-calling.png";
 import { PiBoneFill } from "react-icons/pi";
 import { FaMapLocationDot, FaPaperPlane, FaPhoneVolume } from "react-icons/fa6";
-import { useTranslations } from "next-intl";
+
 import { Metadata } from "next";
 // eslint-disable-next-line camelcase
-import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import { routing } from "@/i18n/routing";
+import { Locale } from "@/lib/locales";
+import { notFound } from "next/navigation";
+import { FadeIn } from "@/components/FadeIn";
 
 type ContactPageProps = {
-  params: { locale: "en" | "bs" };
+  params: Promise<{ locale: string }>;
 };
 
 export async function generateMetadata({
-  params: { locale },
-}: ContactPageProps): Promise<Metadata> {
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+
+  // Validate the locale
+  if (!routing.locales.includes(locale as Locale)) {
+    notFound();
+  }
+
+  setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "Metadata" });
 
   return {
@@ -23,9 +37,10 @@ export async function generateMetadata({
   };
 }
 
-export default function ContactPage({ params: { locale } }: ContactPageProps) {
-  unstable_setRequestLocale(locale);
-  const t = useTranslations("ContactPage");
+export default async function ContactPage({ params }: ContactPageProps) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations("ContactPage");
   return (
     <section>
       <div className=" gradient-bg relative mt-[calc(var(--header-height)+20px)] rounded-3xl px-5 py-8 text-center shadow-md  ">
@@ -33,6 +48,7 @@ export default function ContactPage({ params: { locale } }: ContactPageProps) {
       </div>
 
       <div className="relative my-10 flex flex-col-reverse gap-5 rounded-3xl bg-white shadow-md sm:p-4 lg:flex-row-reverse lg:justify-around xl:gap-20">
+          <FadeIn >
         <div className="flex flex-1 flex-col gap-10 lg:max-w-[650px]">
           <div className="space-y-6 p-5 ">
             <h2 className="flex items-center gap-2 font-semibold">
@@ -46,8 +62,9 @@ export default function ContactPage({ params: { locale } }: ContactPageProps) {
               {t("medium-paragraph-right")}
             </p>
           </div>
-          <ContactForm className="lg:max-w-[650px]" />
+            <ContactForm className="lg:max-w-[650px]" />
         </div>
+          </FadeIn>
 
         <div className="m-5 flex flex-col items-center gap-5 rounded-3xl bg-slate-100 p-4 sm:py-10 md:flex-row lg:flex-col lg:px-16">
           <div className="gradient-bg relative aspect-square w-full max-w-[400px] rounded-full ">

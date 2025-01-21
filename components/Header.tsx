@@ -1,11 +1,7 @@
 "use client";
 
-import { Link } from "@/navigation";
-
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { useEffect, useState } from "react";
-
-import { usePathname } from "next/navigation";
 
 import { navbarLinks } from "@/constants/data";
 
@@ -14,16 +10,17 @@ import Logo from "./shared/Logo";
 import MobileNavbarToggle from "./MobileNavbarToggle";
 import { MotionHeader } from "./shared/framer";
 import useSectionStore from "@/hooks/store/useSectionStore";
-import { LanguagePicker } from "./LanguagePicker";
-import { useTranslations } from "next-intl";
 
+import { useTranslations } from "next-intl";
+import { Link, usePathname } from "@/i18n/routing";
+import { LanguageSwitcher } from "./LanguageSwitcher";
 
 export default function Header() {
   const { scrollY } = useScroll();
   const [hidden, setHidden] = useState(false);
 
   const pathname = usePathname();
-  const t = useTranslations("Header")
+  const t = useTranslations("Header");
 
   const {
     isHeroSectionVisible: heroInView,
@@ -61,12 +58,12 @@ export default function Header() {
       transition={{ duration: 0.3, ease: "easeInOut" }}
       className={`fixed inset-x-0 top-0 z-50 mx-auto h-header-height  border border-white bg-white px-4 py-2.5 shadow-lg shadow-black/[0.03] md:px-4 lg:px-16`}
     >
-      <div className="max-w-[2000px] mx-auto flex size-full items-center justify-between">
+      <div className="  mx-auto flex size-full items-center justify-between">
         <Logo />
         <div className="flex items-center lg:gap-5">
           <div className="flex gap-2 md:hidden">
             <MobileNavbarToggle />
-            <LanguagePicker />
+            <LanguageSwitcher />
           </div>
           <nav className="mr-10 hidden md:block">
             <ul
@@ -92,9 +89,8 @@ export default function Header() {
             </ul>
           </nav>
           <div className="hidden items-center gap-5 md:flex">
-            <PrimaryButton label= {t("contact-button")} />
-            <LanguagePicker />
-           
+            <PrimaryButton label={t("contact-button")} />
+            <LanguageSwitcher />
           </div>
         </div>
       </div>

@@ -7,6 +7,12 @@
     "titleContact": "PetVet | Contact",
     "descriptionContact": "Get in touch with PetVet for all your pet care needs. Whether you have questions about our services, need to schedule an appointment, or seek advice on pet health, our team is here to help. Contact us via phone, email, or visit our location for personalized care and support."
   },
+  "NotFound": {
+    "title": "404",
+    "header": "Page not found",
+    "description": "Sorry, we couldn’t find the page you’re looking for.",
+    "homeLink": "Go to the home page"
+  },
   "Header": {
     "link-home": "Home",
     "link-about": "About",
@@ -182,7 +188,7 @@
     },
     "Other": {
       "title": "Other Services",
-      "description": "Additional services including vaccination, microchipping, and grooming.",
+      "description": "Additional services including vaccination and microchipping.",
       "imageAlt": "Shaving process of a small dog",
       "aboutSection": "In addition to our core services, we offer a variety of other essential services to support your pet's health and well-being. Our goal is to provide comprehensive care to meet all your pet's needs.",
       "whySection": "Our additional services are designed to complement our primary offerings, providing all-around care for your pet. From preventive measures to specialized treatments, we ensure your pet stays healthy and happy. Choose our clinic for a full spectrum of veterinary care.",
@@ -198,10 +204,6 @@
         "3": {
           "title": "Microchipping",
           "description": "Permanent identification to ensure your pet can always be found."
-        },
-        "4": {
-          "title": "Grooming",
-          "description": "Regular grooming services to keep your pet looking and feeling their best."
         }
       }
     }

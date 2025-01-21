@@ -5,15 +5,19 @@ import React from "react";
 import {
   getMessages,
   getTranslations,
+  setRequestLocale,
   // eslint-disable-next-line camelcase
-  unstable_setRequestLocale,
+  
 } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import MobileNavbar from "@/components/MobileNavbar";
-import { locales } from "@/lib/locales";
+import { Locale, locales } from "@/lib/locales";
+import { Metadata } from "next";
+import { routing } from "@/i18n/routing";
+import { notFound } from "next/navigation";
 
 const poppins = Poppins({
   weight: ["100", "200", "400", "600", "700"],
@@ -22,14 +26,21 @@ const poppins = Poppins({
   display: "swap",
 });
 
-type LocaleLayoutProps = {
+type LayoutProps = {
   children: React.ReactNode;
-  params: { locale: "en" | "bs" };
+  params: Promise<{ locale: string }>; // params is now a Promise
 };
 export async function generateMetadata({
-  params: { locale },
-}: LocaleLayoutProps) {
-  unstable_setRequestLocale(locale);
+  params,
+}: {params: Promise<{ locale: string }>}): Promise<Metadata> {
+  const { locale } = await params; 
+
+   // Validate the locale
+   if (!routing.locales.includes(locale as Locale)) {
+    notFound();
+  }
+  
+  setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "Metadata" });
 
   return {
@@ -42,11 +53,16 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-export default async function LocaleLayout({
-  children,
-  params: { locale },
-}: Readonly<LocaleLayoutProps>) {
-  unstable_setRequestLocale(locale);
+export default async function LocaleLayout({ children, params }: LayoutProps) {
+  const { locale } = await params;
+  // Ensure that the incoming `locale` is valid
+  if (!routing.locales.includes(locale as Locale)) {
+    notFound();
+  }
+   // Enable static rendering
+   setRequestLocale(locale);
+  // Providing all messages to the client
+  // side is the easiest way to get started
   const messages = await getMessages();
 
   return (

@@ -2,7 +2,6 @@
 import {  navbarMobileLinks } from "@/constants/data";
 
 
-import { Link } from "@/navigation";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 import { Separator } from "./ui/separator";
@@ -12,6 +11,7 @@ import Logo from "./shared/Logo";
 import MobileNavbarToggle from "./MobileNavbarToggle";
 import SocialLinks from "./shared/SocialLinks";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/routing";
 
 
 export default function MobileNavbar() {

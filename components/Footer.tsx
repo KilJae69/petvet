@@ -5,8 +5,6 @@ import pawImg from "@/public/dog-paw.svg";
 import { Separator } from "./ui/separator";
 import Logo from "./shared/Logo";
 
-import { MapProvider } from "@/providers/map-provider";
-import { MapComponent } from "./shared/GoogleMap";
 import { FaPhone } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { useTranslations } from "next-intl";
@@ -19,7 +17,8 @@ export default function Footer() {
         <div className="flex flex-1 flex-col gap-5 md:justify-center md:p-10">
           <h2 className="text-clamp-md font-bold text-white">
             <span className=" ">{t("h2.part1")}</span>{" "}
-            <span className="uppercase text-accent">{t("h2.part2")}</span> <br />
+            <span className="uppercase text-accent">{t("h2.part2")}</span>{" "}
+            <br />
             {t("h2.part3")}
           </h2>
           <p className="text-clamp-xs text-white">{t("paragraph")}</p>
@@ -31,7 +30,7 @@ export default function Footer() {
             <Image
               src={puppyImg}
               alt="dog"
-              priority
+              
               fill
               className=" translate-y-[18%] object-cover"
               sizes="(min-width: 1340px) 700px, (min-width: 780px) calc(64.44vw - 151px), calc(100vw - 72px)"
@@ -67,11 +66,19 @@ export default function Footer() {
             </span>
           </div>
 
-          <div className="h-[200px] w-full">
-            <MapProvider>
-              <MapComponent />
-            </MapProvider>
-          </div>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.google.com/maps/place/Veterinarska+ambulanta+Pet+Vet+Bihac/@44.8188391,15.8614077,19z/data=!4m6!3m5!1s0x476141e721bed00b:0x7afd5f63cefd48eb!8m2!3d44.8187841!4d15.8621119!16s%2Fg%2F11gy7wry9k?entry=ttu&g_ep=EgoyMDI1MDExNS4wIKXMDSoASAFQAw%3D%3D"
+            className="relative h-[200px] w-full overflow-hidden rounded-xl border "
+          >
+            <Image
+              src="/map-image.png"
+              alt="map"
+              fill
+              className="object-cover"
+            />
+          </a>
         </div>
 
         <Separator orientation="horizontal" className="bg-primaryAccent/60" />

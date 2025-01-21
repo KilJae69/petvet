@@ -1,18 +1,29 @@
 import ServicesList from "@/components/shared/ServicesList";
+import { routing } from "@/i18n/routing";
+import { Locale } from "@/lib/locales";
 import { Metadata } from "next";
-import { useTranslations } from "next-intl";
+
 // eslint-disable-next-line camelcase
-import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import { notFound } from "next/navigation";
 
 import { PiBoneFill } from "react-icons/pi";
 
 type ServicesPageProps = {
-  params: { locale: "en" | "bs" };
+  params: Promise<{ locale: string }>;
 };
 
 export async function generateMetadata({
-  params: { locale },
-}: ServicesPageProps): Promise<Metadata> {
+  params,
+}: {params: Promise<{ locale: string }>}): Promise<Metadata> {
+  const { locale } = await params; 
+
+   // Validate the locale
+   if (!routing.locales.includes(locale as Locale)) {
+    notFound();
+  }
+  
+  setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "Metadata" });
 
   return {
@@ -21,9 +32,10 @@ export async function generateMetadata({
   };
 }
 
-export default function  ServicesPage({ params: { locale } }: ServicesPageProps) {
-  unstable_setRequestLocale(locale);
-  const t = useTranslations("ServicesSection");
+export default async function  ServicesPage({ params }: ServicesPageProps) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations("ServicesSection");
   return (
     <section>
       <div className=" gradient-bg relative mt-[calc(var(--header-height)+20px)] rounded-3xl px-5 py-8 text-center shadow-md  ">

@@ -29,7 +29,7 @@ export default function TestimonialsSlider() {
                 width={60}
                 height={60}
                 alt={t(slide.nameKey)}
-                className="rounded-3xl"
+                className="size-auto rounded-3xl object-cover"
               />
               <div>
                 <h3 className="font-semibold">{t(slide.nameKey)}</h3>

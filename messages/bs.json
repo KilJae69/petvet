@@ -7,6 +7,12 @@
     "titleContact": "PetVet | Kontakt",
     "descriptionContact": "Kontaktirajte PetVet za sve vaše potrebe u vezi s brigom o ljubimcima. Bilo da imate pitanja o našim uslugama, trebate zakazati termin ili tražite savjet o zdravlju ljubimaca, naš tim je tu da vam pomogne. Kontaktirajte nas putem telefona, emaila ili posjetite našu lokaciju za personaliziranu brigu i podršku."
   },
+  "NotFound": {
+    "title": "404",
+    "header": "Stranica nije pronađena",
+    "description": "Nažalost, nismo mogli pronaći stranicu koju tražite.",
+    "homeLink": "Povratak na početnu stranicu"
+  },
   "Header":{
     "link-home":"Početna",
     "link-about":"O nama",
@@ -182,7 +188,7 @@
     },
     "Other": {
       "title": "Ostale Usluge",
-      "description": "Dodatne usluge uključujući cijepljenje, mikročipiranje i šišanje.",
+      "description": "Dodatne usluge uključujući cijepljenje i mikročipiranje.",
       "imageAlt": "Proces šišanja malog psa",
       "aboutSection": "Osim naših osnovnih usluga, nudimo razne druge bitne usluge za podršku zdravlju i dobrobiti vašeg ljubimca. Naš cilj je pružiti sveobuhvatnu njegu koja zadovoljava sve potrebe vašeg ljubimca.",
       "whySection": "Naše dodatne usluge su dizajnirane da upotpune naše primarne ponude, pružajući sveobuhvatnu njegu za vašeg ljubimca. Od preventivnih mjera do specijaliziranih tretmana, osiguravamo da vaš ljubimac ostane zdrav i sretan. Odaberite našu kliniku za potpunu veterinarsku njegu.",
@@ -198,11 +204,8 @@
         "3": {
           "title": "Mikročipiranje",
           "description": "Trajna identifikacija kako bi se osiguralo da se vaš ljubimac uvijek može pronaći."
-        },
-        "4": {
-          "title": "Šišanje",
-          "description": "Redovne usluge šišanja kako bi vaš ljubimac izgledao i osjećao se najbolje."
         }
+        
       }
     }
   },

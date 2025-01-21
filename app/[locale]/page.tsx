@@ -6,16 +6,15 @@ import ServicesSection from "@/components/ServicesSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import WhyUsSection from "@/components/WhyUsSection";
 // eslint-disable-next-line camelcase
-import { unstable_setRequestLocale } from "next-intl/server";
+import { setRequestLocale } from "next-intl/server";
 
 type HomePageProps = {
-  params: {
-    locale: "en" | "bs";
-  };
+  params: Promise<{ locale: string }>;
 };
 
-export default function HomePage({ params: { locale } }: HomePageProps) {
-  unstable_setRequestLocale(locale);
+export default async function HomePage({ params }: HomePageProps) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   return (
     <>
       <HeroSection />

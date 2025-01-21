@@ -1,26 +1,19 @@
-import createMiddleware from 'next-intl/middleware'
-import { NextRequest } from 'next/server'
-import { locales } from './lib/locales';
-import { localePrefix } from './navigation'
-type CustomMiddleware = (req: NextRequest) => Promise<NextRequest>
-const customMiddleware: CustomMiddleware = async req => {
-  console.log('Custom middleware executed before next-intl')
-  return req
-}
-
-const intlMiddleware = createMiddleware({
-  locales,
-  defaultLocale: 'en',
-  localePrefix
-})
-
-export default async function middleware(
-  req: NextRequest
-): Promise<ReturnType<typeof intlMiddleware>> {
-  await customMiddleware(req)
-  return intlMiddleware(req)
-}
-
+import createMiddleware from 'next-intl/middleware';
+import {routing} from './i18n/routing';
+ 
+export default createMiddleware(routing);
+ 
 export const config = {
-  matcher: ['/', '/(en|bs)/:path*']
-}
+  matcher: [
+    // Enable a redirect to a matching locale at the root
+    '/',
+
+    // Set a cookie to remember the previous locale for
+    // all requests that have a locale prefix
+    '/(en|bs)/:path*',
+
+    // Enable redirects that add missing locales
+    // (e.g. `/pathnames` -> `/en/pathnames`)
+    '/((?!_next|_vercel|.*\\..*).*)'
+  ]
+};

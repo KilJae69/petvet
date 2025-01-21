@@ -1,11 +1,4 @@
-// #Animals images
-import rabbitImg from "@/public/services/rabbit2-trans.png";
-import parrotImg from "@/public/services/parrot.png";
-import dogImg from "@/public/services/funny-dog.png";
-import dog2Img from "@/public/services/dog-hunt.png";
-import kittenImg from "@/public/services/ginger-kitten.png";
-import catImg from "@/public/services/young-cat-kitten.png";
-import puppyImg from "@/public/services/puppy-goldie-trans.png";
+
 
 // #Services images
 import generalImg from "@/public/services/close-up-veterinary-doctor-taking-care-pet_1.webp";
@@ -27,12 +20,12 @@ import testimonial2Img from "@/public/testimonials/ljilja.jpg";
 import testimonial3Img from "@/public/testimonials/saida.jpg";
 
 // #Gallery images
-import gallery1Img from "@/public/gallery/gallery1.webp";
-import gallery2Img from "@/public/gallery/gallery2.webp";
-import gallery3Img from "@/public/gallery/gallery3.webp";
-import gallery4Img from "@/public/gallery/gallery4.webp";
-import gallery5Img from "@/public/gallery/gallery5.webp";
-import gallery6Img from "@/public/gallery/gallery6.webp";
+import gallery1Img from "@/public/gallery/gallery1.jpg";
+import gallery2Img from "@/public/gallery/gallery2.jpg";
+import gallery3Img from "@/public/gallery/gallery3.jpg";
+import gallery4Img from "@/public/gallery/gallery4.jpg";
+import gallery5Img from "@/public/gallery/gallery5.jpg";
+import gallery6Img from "@/public/gallery/gallery6.jpg";
 
 import generalIcon from "@/public/icons/services-icons/first-aid-kit.svg";
 import labIcon from "@/public/icons/services-icons/loupe.svg";
@@ -70,64 +63,7 @@ export const navbarMobileLinks = [
   { id: 4, title: "contact-button", href: "/contact" },
 ] as const;
 
-export const services = [
-  {
-    id: 1,
-    title: "Consultation",
-    imageSrc: rabbitImg,
-    imageClasses:
-      "absolute translate-x-5 translate-y-5 object-contain transition-all duration-500 group-hover:translate-x-0 group-hover:translate-y-0 bottom-[-35%] right-[-60%]",
-    speechLabel: "Let's talk about my health, prevention is important!",
-  },
-  {
-    id: 2,
-    title: "Vaccination",
-    imageSrc: dogImg,
-    imageClasses:
-      "absolute translate-x-5 translate-y-5 object-contain transition-all duration-500 group-hover:translate-x-0 group-hover:translate-y-0 bottom-[-15%] right-[-10%] max-w-[70%]",
-    speechLabel: "A little pinch for a big protection!",
-  },
-  {
-    id: 3,
-    title: "Therapy",
-    imageSrc: catImg,
-    imageClasses:
-      "absolute translate-x-5 translate-y-5 object-contain transition-all duration-500 group-hover:translate-x-0 group-hover:translate-y-0 -bottom-3/4 -right-1/2",
-    speechLabel: "Relax, this will make me feel better.",
-  },
-  {
-    id: 4,
-    title: "Ophthalmology",
-    imageSrc: parrotImg,
-    imageClasses:
-      "absolute object-contain transition-all duration-500 group-hover:translate-x-0 group-hover:translate-y-0 right-[-55%] top-[-35%] -translate-y-5 translate-x-5 -rotate-90",
-    speechLabel: "I see clearly now!!",
-  },
-  {
-    id: 5,
-    title: "Neutering",
-    imageSrc: dog2Img,
-    imageClasses:
-      "absolute translate-x-5 translate-y-5 object-contain transition-all duration-500 group-hover:translate-x-0 group-hover:translate-y-0 bottom-[-65%] right-[-55%]",
-    speechLabel: "This will help me stay healthy!",
-  },
-  {
-    id: 6,
-    title: "Surgery",
-    imageSrc: kittenImg,
-    imageClasses:
-      "absolute translate-x-5 translate-y-5 object-contain transition-all duration-500 group-hover:translate-x-0 group-hover:translate-y-0 bottom-[-65%] right-[-55%]",
-    speechLabel: "Don't worry, I'll be in good hands!",
-  },
-  {
-    id: 7,
-    title: "Emergency",
-    imageSrc: puppyImg,
-    imageClasses:
-      "absolute translate-x-5 translate-y-5 object-contain transition-all duration-500 group-hover:translate-x-0 group-hover:translate-y-0 bottom-[-45%] right-[-15%] max-w-[70%]",
-    speechLabel: "I need help now!",
-  },
-] as const;
+
 
 export const proffesionals = [
   {
@@ -399,11 +335,7 @@ export const servicesNew = [
           titleKey: "Other.included.3.title",
           descriptionKey: "Other.included.3.description",
         },
-        {
-          id: 4,
-          titleKey: "Other.included.4.title",
-          descriptionKey: "Other.included.4.description",
-        },
+        
       ],
       whySectionKey: "Other.whySection",
     },
