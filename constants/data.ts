@@ -1,5 +1,3 @@
-
-
 // #Services images
 import generalImg from "@/public/services/close-up-veterinary-doctor-taking-care-pet_1.webp";
 import labImg from "@/public/services/close-up-scientist-using-microscope_1.webp";
@@ -19,6 +17,16 @@ import testimonial1Img from "@/public/testimonials/azra.jpg";
 import testimonial2Img from "@/public/testimonials/ljilja.jpg";
 import testimonial3Img from "@/public/testimonials/saida.jpg";
 
+// #partner logos
+import logoArche4Dogs from "@/public/logos-petvet/logo-arche4dogs.svg";
+import logoBea from "@/public/logos-petvet/logo-bea.png";
+import logoEinHertz from "@/public/logos-petvet/logo-ein-hertz.png";
+// import logoEuropa from "@/public/logos-petvet/logo-europa.png"
+import logoHundefreunde from "@/public/logos-petvet/logo-hundefreunde-europa.png";
+import logoMaxFoundation from "@/public/logos-petvet/logo-max-foundation.svg";
+import logoNiemeshund from "@/public/logos-petvet/logo-niemenshund.png";
+import logoSelenhunde from "@/public/logos-petvet/logo-selenhunde.png";
+
 // #Gallery images
 import gallery1Img from "@/public/gallery/gallery1.jpg";
 import gallery2Img from "@/public/gallery/gallery2.jpg";
@@ -32,6 +40,8 @@ import labIcon from "@/public/icons/services-icons/loupe.svg";
 import surgeryIcon from "@/public/icons/services-icons/scalpel.svg";
 import reproductionIcon from "@/public/icons/services-icons/stethoscope.svg";
 import otherIcon from "@/public/icons/services-icons/veterinarian.svg";
+
+import { FaShieldHeart, FaShieldDog, FaShieldCat } from "react-icons/fa6";
 
 export const navbarLinks = [
   {
@@ -63,7 +73,76 @@ export const navbarMobileLinks = [
   { id: 4, title: "contact-button", href: "/contact" },
 ] as const;
 
+export const partners = [
+  {
+    id: 1,
+    title: "Arche 4 Dogs",
+    imgSrc: logoArche4Dogs,
+    href: "https://www.arche4dogs.de/",
+  },
+  {
+    id: 2,
+    title: "BEA- Hilfe für Bosniens Strassenhunde e.V.",
+    imgSrc: logoBea,
+    href: "https://www.facebook.com/bea.hilfe.mit.herz/",
+  },
+  {
+    id: 3,
+    title: "Die Niemanshunde von Bihac",
+    imgSrc: logoNiemeshund,
+    href: "https://www.niemandshunde-bihac.de/",
+  },
+  {
+    id: 4,
+    title: "Ein Herz Fuer Hunde",
+    imgSrc: logoEinHertz,
+    href: "https://einherzfuerhunde.com/",
+  },
+  {
+    id: 5,
+    title: "Hunde Freunde Europa",
+    imgSrc: logoHundefreunde,
+    href: "https://www.hundefreunde-europa.de/ueberuns/",
+  },
+  {
+    id: 6,
+    title: "Max Foundation",
+    imgSrc: logoMaxFoundation,
+    href: "https://www.maxfoundation.de/homepage.html#:~:text=The%20Max%20Foundation%20is%20a,in%20Bihac%2C%20Bosnia%20and%20Herzegovina.",
+  },
+  {
+    id: 7,
+    title: "SeelenHunde",
+    imgSrc: logoSelenhunde,
+    href: "https://seelenhunde.at/",
+  },
+  // {id:8,
+  //  title: "Max Foundation",
+  //  imgSrc: logoMaxFoundation,
+  //  href: "https://www.maxfoundation.de/homepage.html#:~:text=The%20Max%20Foundation%20is%20a,in%20Bihac%2C%20Bosnia%20and%20Herzegovina.",
+  // },
+];
 
+export const aboutCards = [
+  {
+    id: 1,
+    titleKey: "aboutCards.0.title",
+    descriptionKey: "aboutCards.0.description",
+    icon: FaShieldDog,
+  },
+  {
+    id: 2,
+    titleKey: "aboutCards.1.title",
+    descriptionKey: "aboutCards.1.description",
+    icon: FaShieldCat,
+  },
+  {
+    id: 3,
+    titleKey: "aboutCards.2.title",
+    descriptionKey: "aboutCards.2.description",
+    icon: FaShieldHeart,
+  },
+];
 
 export const proffesionals = [
   {
@@ -129,32 +208,27 @@ export const faqData = [
   {
     id: 1,
     questionKey: "question1.question",
-    answerKey:
-      "question1.answer",
+    answerKey: "question1.answer",
   },
   {
     id: 2,
     questionKey: "question2.question",
-    answerKey:
-      "question2.answer",
+    answerKey: "question2.answer",
   },
   {
     id: 3,
     questionKey: "question3.question",
-    answerKey:
-      "question3.answer",
+    answerKey: "question3.answer",
   },
   {
     id: 4,
     questionKey: "question4.question",
-    answerKey:
-      "question4.answer",
+    answerKey: "question4.answer",
   },
   {
     id: 5,
     questionKey: "question5.question",
-    answerKey:
-      "question5.answer",
+    answerKey: "question5.answer",
   },
 ] as const;
 
@@ -335,12 +409,8 @@ export const servicesNew = [
           titleKey: "Other.included.3.title",
           descriptionKey: "Other.included.3.description",
         },
-        
       ],
       whySectionKey: "Other.whySection",
     },
-  }
+  },
 ];
-
-
-

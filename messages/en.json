@@ -5,7 +5,9 @@
     "titleServices": "PetVet | Services",
     "descriptionServices": "Explore PetVet's comprehensive range of pet care services designed to meet all your pet's needs. From balanced nutrition and professional grooming to regular health check-ups and essential vaccinations, our team of dedicated professionals is here to ensure your pet's health and happiness. Discover how we can support you in providing the best care for your furry friend.",
     "titleContact": "PetVet | Contact",
-    "descriptionContact": "Get in touch with PetVet for all your pet care needs. Whether you have questions about our services, need to schedule an appointment, or seek advice on pet health, our team is here to help. Contact us via phone, email, or visit our location for personalized care and support."
+    "descriptionContact": "Get in touch with PetVet for all your pet care needs. Whether you have questions about our services, need to schedule an appointment, or seek advice on pet health, our team is here to help. Contact us via phone, email, or visit our location for personalized care and support.",
+    "titleAboutUs": "PetVet | About Us",
+    "descriptionAboutUs": "PetVet is a leading veterinary clinic in Bihać with over 5 years of experience in providing top-quality veterinary care. We offer modern treatments to improve the health and quality of life of your pets with reliability and professionalism. Visit us to learn more!"
   },
   "NotFound": {
     "title": "404",
@@ -248,6 +250,55 @@
     "text-area": "How can we help you? Feel free to get in touch!",
     "button": "Get in touch"
   },
+  "AboutUsPage": {
+    "h1": "About Us",
+    "large-heading": "Providing Trusted Veterinary Care in Bihać for Over 6 Years",
+    "subheading": "At PetVet, we are dedicated to offering top-quality veterinary services with a focus on reliability, professionalism, and modern care techniques.",
+    "h1-2": "Mission & Goals",
+    "large-heading-2": "Committed to Continuous Advancement in Veterinary Practice",
+    "subheading-2": "Our mission is to provide top-quality veterinary care based on modern procedures and expert knowledge, while our vision is to become a leader in veterinary practice through continuous improvement and adaptation to global standards. With clearly defined goals, we focus on enhancing the quality of life for pets and supporting responsible pet ownership.",
+    "h1-3": "Our Partners",
+    "large-heading-3": "Collaborating for a Better Tomorrow",
+    "subheading-3": "At PetVet, we believe in the power of collaboration to make a meaningful difference in the lives of animals. Through our partnerships with respected organizations and NGOs, we work together to promote responsible pet ownership, support animal welfare initiatives, and provide essential veterinary care. Our collective efforts focus on improving the quality of life for pets and stray animals alike, ensuring they receive the care, protection, and love they deserve.",
+    "contact-button":"Get in touch",
+    "aboutCards": [
+      {
+        "id": 1,
+        "title": "10.000+ Satisfied Customers",
+        "description": "Our commitment to exceptional pet care has earned the trust of thousands of happy customers who rely on us for their pets' health, happiness, and well-being."
+      },
+      {
+        "id": 2,
+        "title": "10+ Years Of Experience",
+        "description": "With over a decade of expertise, our dedicated team provides high-quality veterinary services, ensuring your pet receives the best possible care at every stage of life."
+      },
+      {
+        "id": 3,
+        "title": "Quality Products Only",
+        "description": "We carefully select premium pet products that meet the highest standards, offering safe, nutritious, and effective solutions to support your pet’s healthy lifestyle."
+      }
+    ],
+    "tabTriggers": {
+      "mission": "Our Mission",
+      "vision": "Our Vision",
+      "goals": "Our Goals"
+    },
+    "tabs": {
+      "mission": {
+        "title": "Delivering Compassionate and Professional Veterinary Care",
+        "description": "At PetVet, our mission is to provide exceptional veterinary services that go beyond treatment—we offer compassionate care that nurtures the bond between pets and their owners. Through modern medical techniques, a highly skilled team, and a heartfelt approach, we are dedicated to enhancing the quality of life for pets while fostering trust and reliability within our community."
+      },
+      "vision": {
+        "title": "Creating a Future of Responsible Pet Ownership and Awareness",
+        "description": "We believe that a better future for all furry friends—both pets and strays—begins with education and awareness. Our vision is to inspire a shift in mindset across Bosnia, emphasizing the importance of responsible pet ownership and preventive care. Through continuous collaboration with communities, we strive to ensure that every animal receives the care, respect, and dignity they deserve."
+      },
+      "goals": {
+        "title": "Ending the Stray Crisis Through Awareness and Action",
+        "description": "Stray animals are not just an issue—they are a consequence of human negligence. At PetVet, we are committed to solving this challenge the right way: by raising awareness and implementing sustainable neutering and sterilization programs. In partnership with NGOs and local authorities, we work tirelessly to prevent further suffering and build a compassionate society where every animal has a chance for a better life."
+      }
+    }
+
+  },
   "Footer": {
     "h2": {
       "part1": "Get",
@@ -257,7 +308,7 @@
     "paragraph": "At our veterinary clinic, consultations provide comprehensive insights into your pet's health and well-being.",
     "button": "Contact us",
     "paragraph-secondary": "Join us on a journey of care where your pet takes center stage.",
-    "small-text-left": "© 2024 PetVet. All rights reserved.",
+    "small-text-left": "© 2025 PetVet. All rights reserved.",
     "small-text-right": "Website developed and maintained by"
   }
 }

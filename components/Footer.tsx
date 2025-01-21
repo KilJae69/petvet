@@ -30,7 +30,6 @@ export default function Footer() {
             <Image
               src={puppyImg}
               alt="dog"
-              
               fill
               className=" translate-y-[18%] object-cover"
               sizes="(min-width: 1340px) 700px, (min-width: 780px) calc(64.44vw - 151px), calc(100vw - 72px)"
@@ -40,7 +39,7 @@ export default function Footer() {
             <Image
               className="object-contain "
               fill
-              sizes="(min-width: 940px) 400px, (min-width: 780px) calc(24.29vw + 177px), (min-width: 500px) 400px, calc(95.56vw - 59px)"
+              sizes="(min-width: 1060px) 459px, (min-width: 880px) calc(25.63vw + 194px), (min-width: 500px) 460px, calc(110.56vw - 69px)"
               src={pawImg}
               alt="Paw image"
             />
@@ -77,6 +76,7 @@ export default function Footer() {
               alt="map"
               fill
               className="object-cover"
+              sizes="(min-width: 2060px) 1243px, (min-width: 1140px) calc(80.56vw - 400px), (min-width: 780px) calc(4.12vw + 456px), (min-width: 560px) calc(100vw - 34px), 466px"
             />
           </a>
         </div>

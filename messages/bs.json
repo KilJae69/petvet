@@ -5,7 +5,9 @@
     "titleServices": "PetVet | Usluge",
     "descriptionServices": "Istražite sveobuhvatan asortiman PetVet usluga za brigu o ljubimcima, dizajniranih da zadovolje sve potrebe vašeg ljubimca. Od uravnotežene ishrane i profesionalnog uređivanja do redovnih zdravstvenih pregleda i neophodnih vakcinacija, naš tim posvećenih profesionalaca je tu da osigura zdravlje i sreću vašeg ljubimca. Otkrijte kako vam možemo pomoći u pružanju najbolje njege za vašeg krznenog prijatelja.",
     "titleContact": "PetVet | Kontakt",
-    "descriptionContact": "Kontaktirajte PetVet za sve vaše potrebe u vezi s brigom o ljubimcima. Bilo da imate pitanja o našim uslugama, trebate zakazati termin ili tražite savjet o zdravlju ljubimaca, naš tim je tu da vam pomogne. Kontaktirajte nas putem telefona, emaila ili posjetite našu lokaciju za personaliziranu brigu i podršku."
+    "descriptionContact": "Kontaktirajte PetVet za sve vaše potrebe u vezi s brigom o ljubimcima. Bilo da imate pitanja o našim uslugama, trebate zakazati termin ili tražite savjet o zdravlju ljubimaca, naš tim je tu da vam pomogne. Kontaktirajte nas putem telefona, emaila ili posjetite našu lokaciju za personaliziranu brigu i podršku.",
+    "titleAboutUs": "PetVet | O Nama",
+    "descriptionAboutUs": "PetVet je vodeća veterinarska ambulanta u Bihaću s više od 5 godina iskustva u pružanju vrhunske veterinarske njege. Nudimo savremene tretmane za poboljšanje zdravlja i kvaliteta života vaših ljubimaca uz pouzdanost i profesionalnost. Posjetite nas i saznajte više!"
   },
   "NotFound": {
     "title": "404",
@@ -13,13 +15,13 @@
     "description": "Nažalost, nismo mogli pronaći stranicu koju tražite.",
     "homeLink": "Povratak na početnu stranicu"
   },
-  "Header":{
-    "link-home":"Početna",
-    "link-about":"O nama",
-    "link-services":"Usluge",
-    "contact-button":"Kontaktirajte nas",
-    "language-button":"Jezik",
-    "language-option-bs":"Bosanski",
+  "Header": {
+    "link-home": "Početna",
+    "link-about": "O nama",
+    "link-services": "Usluge",
+    "contact-button": "Kontaktirajte nas",
+    "language-button": "Jezik",
+    "language-option-bs": "Bosanski",
     "language-option-en": "Engleski"
   },
   "HeroSection": {
@@ -33,7 +35,7 @@
     "successMessage": "Uspješno liječimo vaše prijatelje od 2010."
   },
   "ServicesSection": {
-    "singlePageH1":"Usluge",
+    "singlePageH1": "Usluge",
     "marqueeText": {
       "part1": "Naš cilj je pružiti prilagođenu njegu, osiguravajući da",
       "part2": " svaki ljubimac dobije potrebnu pažnju",
@@ -77,11 +79,11 @@
       "text": "Veoma sam zadovoljna uslugom koju sam dobila. Osoblje je veoma profesionalno i ljubazno. Preporučila bih ovu kliniku svima."
     }
   },
- "ServicesList": {
-  "link":"Saznaj više",
-  "singlePageTitleAbout": "O Usluzi",
-  "singlePageTitleWhat": "Šta Je Dio Usluge",
-  "singlePageTitleWhy": "Zašto Biste Trebali Koristiti Uslugu",
+  "ServicesList": {
+    "link": "Saznaj više",
+    "singlePageTitleAbout": "O Usluzi",
+    "singlePageTitleWhat": "Šta Je Dio Usluge",
+    "singlePageTitleWhy": "Zašto Biste Trebali Koristiti Uslugu",
     "GeneralCare": {
       "title": "Opća Njega i Liječenje",
       "description": "Sveobuhvatna zdravstvena njega za kućne ljubimce uključujući pse, mačke, reptile i glodare.",
@@ -205,7 +207,6 @@
           "title": "Mikročipiranje",
           "description": "Trajna identifikacija kako bi se osiguralo da se vaš ljubimac uvijek može pronaći."
         }
-        
       }
     }
   },
@@ -249,6 +250,55 @@
     "text-area": "Kako vam možemo pomoći? Slobodno nas kontaktirajte!",
     "button": "Kontaktirajte nas"
   },
+  "AboutUsPage": {
+    "h1": "O Nama",
+    "large-heading": "Pružamo Pouzdanu Veterinarsku Njegu u Bihaću Više od 6 Godina",
+    "subheading": "U PetVet-u smo posvećeni pružanju vrhunskih veterinarskih usluga s fokusom na pouzdanost, profesionalnost i savremene metode njege.",
+    "h1-2": "Misija i Ciljevi",
+    "large-heading-2": "Posvećeni Neprekidnom Unapređenju Veterinarske Prakse",
+    "subheading-2": "Naša misija je pružiti vrhunsku veterinarsku njegu zasnovanu na savremenim procedurama i stručnom znanju, dok je naša vizija postati lider u veterinarskoj praksi kroz kontinuirano usavršavanje i prilagođavanje svjetskim standardima. Kroz jasno postavljene ciljeve, fokusiramo se na poboljšanje kvaliteta života kućnih ljubimaca i podršku odgovornom vlasništvu.",
+    "h1-3": "Naši partneri",
+    "large-heading-3": "Saradnja za bolje sutra",
+    "subheading-3": "U PetVet-u vjerujemo u snagu saradnje kako bismo ostvarili značajan uticaj na živote životinja. Kroz partnerstva sa renomiranim organizacijama i nevladinim organizacijama, zajedno radimo na promociji odgovornog vlasništva, podršci inicijativama za dobrobit životinja i pružanju osnovne veterinarske njege. Naši zajednički napori usmjereni su na poboljšanje kvaliteta života kućnih ljubimaca i napuštenih životinja, osiguravajući im njegu, zaštitu i ljubav koju zaslužuju.",
+    
+    "contact-button":"Javite nam se",
+    "aboutCards": [
+      {
+        "id": 1,
+        "title": "10.000+ Zadovoljnih Kupaca",
+        "description": "Naša posvećenost vrhunskoj njezi kućnih ljubimaca stekla je povjerenje hiljada zadovoljnih klijenata koji se oslanjaju na nas za zdravlje, sreću i dobrobit svojih ljubimaca."
+      },
+      {
+        "id": 2,
+        "title": "10+ Godina Iskustva",
+        "description": "Sa više od decenije iskustva, naš posvećeni tim pruža visokokvalitetne veterinarske usluge, osiguravajući da vaš ljubimac dobije najbolju moguću njegu u svakoj fazi života."
+      },
+      {
+        "id": 3,
+        "title": "Samo Kvalitetni Proizvodi",
+        "description": "Pažljivo biramo vrhunske proizvode za kućne ljubimce koji ispunjavaju najviše standarde, nudeći sigurna, hranjiva i učinkovita rješenja za zdrav život vašeg ljubimca."
+      }
+    ],
+    "tabTriggers": {
+      "mission": "Naša Misija",
+      "vision": "Naša Vizija",
+      "goals": "Naši Ciljevi"
+    },
+    "tabs": {
+      "mission": {
+        "title": "Pružamo Saosjećajnu i Profesionalnu Veterinarsku Njegu",
+        "description": "Naša misija je pružiti izvanredne veterinarske usluge koje nadilaze samo liječenje—nudimo saosjećajnu brigu koja jača vezu između kućnih ljubimaca i njihovih vlasnika. Kroz savremene medicinske tehnike, stručan tim i iskren pristup, posvećeni smo poboljšanju kvaliteta života ljubimaca i izgradnji povjerenja u zajednici."
+      },
+      "vision": {
+        "title": "Stvaramo Budućnost Odgovornog Vlasništva i Svijesti",
+        "description": "Vjerujemo da bolja budućnost za sve naše krznene prijatelje—bilo da su kućni ljubimci ili napuštene životinje—počiva na edukaciji i podizanju svijesti. Naša vizija je inspirisati promjenu svijesti širom Bosne, naglašavajući važnost odgovornog vlasništva i preventivne njege. Kroz stalnu saradnju s lokalnim zajednicama, trudimo se osigurati da svaka životinja dobije potrebnu njegu, poštovanje i dostojanstvo."
+      },
+      "goals": {
+        "title": "Rješavanje Problema Napuštenih Životinja Kroz Svijest i Akciju",
+        "description": "Napuštene životinje nisu samo problem—one su posljedica ljudske nebrige. U PetVet-u smo posvećeni rješavanju ovog izazova na pravi način: kroz podizanje svijesti i sprovođenje održivih programa sterilizacije i kastracije. U partnerstvu sa nevladinim organizacijama i lokalnim vlastima, neumorno radimo na sprječavanju daljeg stradanja i izgradnji društva koje brine o svim životinjama."
+      }
+    }
+  },
   "Footer": {
     "h2": {
       "part1": "Dobijte",
@@ -256,9 +306,9 @@
       "part3": "konsultacije"
     },
     "paragraph": "U našoj veterinarskoj klinici, konsultacije pružaju sveobuhvatan uvid u zdravlje i dobrobit vašeg ljubimca.",
-    "button":"Kontaktirajte nas",
+    "button": "Kontaktirajte nas",
     "paragraph-secondary": "Pridružite nam se na putu brige gdje vaš ljubimac zauzima središnje mjesto.",
-    "small-text-left": "© 2024 PetVet. Sva prava zadržana.",
+    "small-text-left": "© 2025 PetVet. Sva prava zadržana.",
     "small-text-right": "Web stranicu razvio i održava"
   }
 }

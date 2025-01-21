@@ -1,3 +1,4 @@
+import { FadeIn } from "@/components/FadeIn";
 import ServicesList from "@/components/shared/ServicesList";
 import { routing } from "@/i18n/routing";
 import { Locale } from "@/lib/locales";
@@ -15,14 +16,16 @@ type ServicesPageProps = {
 
 export async function generateMetadata({
   params,
-}: {params: Promise<{ locale: string }>}): Promise<Metadata> {
-  const { locale } = await params; 
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
 
-   // Validate the locale
-   if (!routing.locales.includes(locale as Locale)) {
+  // Validate the locale
+  if (!routing.locales.includes(locale as Locale)) {
     notFound();
   }
-  
+
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "Metadata" });
 
@@ -32,28 +35,30 @@ export async function generateMetadata({
   };
 }
 
-export default async function  ServicesPage({ params }: ServicesPageProps) {
+export default async function ServicesPage({ params }: ServicesPageProps) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("ServicesSection");
   return (
     <section>
-      <div className=" gradient-bg relative mt-[calc(var(--header-height)+20px)] rounded-3xl px-5 py-8 text-center shadow-md  ">
-        <h1 className="text-clamp-lg font-bold text-white">
-          {t("singlePageH1")}
-        </h1>
-      </div>
-      <div className="mx-auto max-w-[1000px] space-y-6 p-5 py-14 text-center md:py-20 lg:py-32">
-        <h2 className="flex items-center justify-center gap-2 font-semibold">
-          <PiBoneFill className="size-6 text-primary" />
-          <span className="block text-primary">PetVet</span> {t("h2")}
-        </h2>
-        <p className="text-clamp-lg font-bold">
-          {t("leadTitle")} <span className="text-primary">PetVet</span>{" "}
-          {t("h2")}
-        </p>
-        <p className="text-clamp-sm text-black/70">{t("description")}</p>
-      </div>
+        <div className=" gradient-bg relative mt-[calc(var(--header-height)+20px)] rounded-3xl px-5 py-8 text-center shadow-md  ">
+          <h1 className="text-clamp-lg font-bold text-white">
+            {t("singlePageH1")}
+          </h1>
+        </div>
+      <FadeIn>
+        <div className="mx-auto max-w-[1000px] space-y-6 p-5 py-14 text-center md:py-20 lg:py-32">
+          <h2 className="flex items-center justify-center gap-2 font-semibold">
+            <PiBoneFill className="size-6 text-primary" />
+            <span className="block text-primary">PetVet</span> {t("h2")}
+          </h2>
+          <p className="text-clamp-lg font-bold">
+            {t("leadTitle")} <span className="text-primary">PetVet</span>{" "}
+            {t("h2")}
+          </p>
+          <p className="text-clamp-sm text-black/70">{t("description")}</p>
+        </div>
+      </FadeIn>
 
       <div className="pb-14 md:pb-20 lg:pb-32">
         <ServicesList />
