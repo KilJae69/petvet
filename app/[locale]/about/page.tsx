@@ -8,16 +8,12 @@ import Marquee from "react-fast-marquee";
 import { aboutCards, partners } from "@/constants/data";
 import Image from "next/image";
 import { FadeIn, FadeInStagger } from "@/components/FadeIn";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import PrimaryButton from "@/components/shared/PrimaryButton";
-import { motion } from "framer-motion";
+
 import { AnimatedTabsContent } from "@/components/FadeInTabsContent";
 
-const fadeInVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0 },
-  exit: { opacity: 0, y: -20 },
-};
+
 
 type AboutUsPageProps = {
   params: Promise<{ locale: string }>;
