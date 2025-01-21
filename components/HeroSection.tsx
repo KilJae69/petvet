@@ -37,7 +37,7 @@ export default function HeroSection() {
             <Image
               src={dogImg}
               alt="dog"
-              loading="eager"
+              priority
               fill
               className=" object-cover "
               sizes="(min-width: 1340px) 700px, (min-width: 780px) calc(64.44vw - 151px), calc(100vw - 72px)"
