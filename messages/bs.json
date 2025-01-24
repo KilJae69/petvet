@@ -249,7 +249,18 @@
     "name": "Vaše Ime",
     "subject": "Naslov Poruke",
     "text-area": "Kako vam možemo pomoći? Slobodno nas kontaktirajte!",
-    "button": "Kontaktirajte nas"
+    "button": "Kontaktirajte nas",
+    "validation": {
+    "required": "Ovo polje je obavezno.",
+    "nameMax": "Ime mora imati manje od 100 znakova.",
+    "nameLetters": "Vaše ime smije sadržavati samo slova.",
+    "emailInvalid": "Nevažeća e-mail adresa.",
+    "emailMax": "E-mail mora imati manje od 100 znakova.",
+    "phoneInvalid": "Nevažeći format telefonskog broja.",
+    "phoneMax": "Telefonski broj mora imati manje od 20 znakova.",
+    "subjectMax": "Naslov mora imati manje od 100 znakova.",
+    "messageMax": "Poruka mora imati manje od 1000 znakova."
+  }
   },
   "AboutUsPage": {
     "h1": "O Nama",
@@ -312,4 +323,5 @@
     "small-text-left": "© 2025 PetVet. Sva prava zadržana.",
     "small-text-right": "Web stranicu razvio i održava"
   }
+  
 }

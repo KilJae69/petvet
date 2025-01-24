@@ -1,49 +1,41 @@
-//  type Messages = typeof import("@/messages/en.json");
-//  type BsMessages = typeof import("@/messages/bs.json");
-
-//  declare interface IntlMessages extends Messages, BsMessages {}
-
 import { z } from "zod";
 
-// ## Contact Form Schema
-export const contactFormSchema = z.object({
-  fullName: z
-    .string()
-    .trim()
-    .min(1, {
-      message: "First name is required.",
-    })
-    .max(100, { message: "First name must be less than 100 characters." })
-    .refine((value) => /^[a-zA-Z]+$/.test(value), {
-      message: "Your name must only contain letters.",
-    }),
-  
-  email: z
-    .string()
-    .trim()
-    .email({ message: "Invalid email address" })
-    .min(1, {
-      message: "Email is required.",
-    })
-    .max(100, { message: "Email must be less than 100 characters." }),
-  phone: z
-    .string()
-    .trim()
-    .min(1, { message: "Phone number is required." })
-    .max(20, { message: "Phone number must be less than 20 characters." })
-    .regex(/^[\d\s()+-]+$/, { message: "Invalid phone number format." }),
-  subject: z
-    .string()
-    .trim()
-    .min(1, { message: "Subject is required." })
-    .max(100, { message: "Subject must be less than 100 characters." }),
-  message: z
-    .string()
-    .trim()
-    .min(1, {
-      message: "Message is required.",
-    })
-    .max(1000, { message: "Message must be less than 1000 characters." }),
-});
+export const contactFormSchema = (t: (key: string) => string) =>
+  z.object({
+    fullName: z
+      .string()
+      .trim()
+      .min(1, { message: t("validation.required") })
+      .max(100, { message: t("validation.nameMax") })
+      .refine((value) => /^[a-zA-Z]+$/.test(value), {
+        message: t("validation.nameLetters"),
+      }),
 
-export type TContactFormSchema = z.infer<typeof contactFormSchema>;
+    email: z
+      .string()
+      .trim()
+      .email({ message: t("validation.emailInvalid") })
+      .min(1, { message: t("validation.required") })
+      .max(100, { message: t("validation.emailMax") }),
+
+    phone: z
+      .string()
+      .trim()
+      .min(1, { message: t("validation.required") })
+      .max(20, { message: t("validation.phoneMax") })
+      .regex(/^[\d\s()+-]+$/, { message: t("validation.phoneInvalid") }),
+
+    subject: z
+      .string()
+      .trim()
+      .min(1, { message: t("validation.required") })
+      .max(100, { message: t("validation.subjectMax") }),
+
+    message: z
+      .string()
+      .trim()
+      .min(1, { message: t("validation.required") })
+      .max(1000, { message: t("validation.messageMax") }),
+  });
+
+export type TContactFormSchema = z.infer<ReturnType<typeof contactFormSchema>>;

@@ -249,7 +249,18 @@
     "name": "Your First Name",
     "subject": "Message Subject",
     "text-area": "How can we help you? Feel free to get in touch!",
-    "button": "Get in touch"
+    "button": "Get in touch",
+    "validation": {
+    "required": "This field is required.",
+    "nameMax": "First name must be less than 100 characters.",
+    "nameLetters": "Your name must only contain letters.",
+    "emailInvalid": "Invalid email address.",
+    "emailMax": "Email must be less than 100 characters.",
+    "phoneInvalid": "Invalid phone number format.",
+    "phoneMax": "Phone number must be less than 20 characters.",
+    "subjectMax": "Subject must be less than 100 characters.",
+    "messageMax": "Message must be less than 1000 characters."
+  }
   },
   "AboutUsPage": {
     "h1": "About Us",
@@ -312,4 +323,5 @@
     "small-text-left": "© 2025 PetVet. All rights reserved.",
     "small-text-right": "Website developed and maintained by"
   }
+  
 }

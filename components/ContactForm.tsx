@@ -32,7 +32,7 @@ type ContactFormProps = {
 export default function ContactForm({ className }: ContactFormProps) {
   const t = useTranslations("ContactForm")
   const form = useForm<TContactFormSchema>({
-    resolver: zodResolver(contactFormSchema),
+    resolver: zodResolver(contactFormSchema(t)),
     defaultValues: {
       fullName: "",
 
