@@ -260,7 +260,9 @@
     "phoneMax": "Telefonski broj mora imati manje od 20 znakova.",
     "subjectMax": "Naslov mora imati manje od 100 znakova.",
     "messageMax": "Poruka mora imati manje od 1000 znakova."
-  }
+  },
+  "successMessage": "Vaša poruka je uspješno poslana!",
+  "errorMessage": "Nešto je pošlo po zlu. Molimo pokušajte ponovo kasnije."
   },
   "AboutUsPage": {
     "h1": "O Nama",

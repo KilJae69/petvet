@@ -1,7 +1,7 @@
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import React from "react";
-
+import  { Toaster } from 'react-hot-toast';
 import {
   getMessages,
   getTranslations,
@@ -73,6 +73,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
           <MobileNavbar />
           <main className="container">{children}</main>
           <Footer />
+          <Toaster />
         </NextIntlClientProvider>
       </body>
     </html>

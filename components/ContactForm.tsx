@@ -24,19 +24,21 @@ import { TContactFormSchema, contactFormSchema } from "@/lib/types";
 import { cn } from "@/lib/utils";
 import { useForm } from "react-hook-form";
 import { useTranslations } from "next-intl";
+import { sendEmailAction } from "@/lib/sendEmail.action";
+import toast from "react-hot-toast";
 
 type ContactFormProps = {
   className?: string;
 };
 
 export default function ContactForm({ className }: ContactFormProps) {
-  const t = useTranslations("ContactForm")
+  const t = useTranslations("ContactForm");
   const form = useForm<TContactFormSchema>({
     resolver: zodResolver(contactFormSchema(t)),
     defaultValues: {
       fullName: "",
 
-      email: "",
+      senderEmail: "",
       phone: "",
       subject: "",
       message: "",
@@ -45,20 +47,29 @@ export default function ContactForm({ className }: ContactFormProps) {
 
   const {
     formState: { errors, isSubmitting },
+    reset,
   } = form;
 
   const onSubmit = async (formData: TContactFormSchema) => {
-    console.log(FormData);
+    try {
+      const response = await sendEmailAction(formData);
+
+      if (response.error) {
+        toast.error(`${t("errorMessage")}:${response.error}`);
+      } else {
+        toast.success(`${t("successMessage")}`);
+        reset();
+      }
+    } catch (error) {
+      toast.error(`Unexpected error: ${error} `);
+    }
   };
 
   return (
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className={cn(
-          "bg-white p-5 rounded-3xl  ",
-          className
-        )}
+        className={cn("bg-white p-5 rounded-3xl  ", className)}
       >
         <FormField
           control={form.control}
@@ -95,12 +106,12 @@ export default function ContactForm({ className }: ContactFormProps) {
 
         <FormField
           control={form.control}
-          name="email"
+          name="senderEmail"
           render={({ field }) => (
             <FormItem className="group flex min-h-[80px] flex-col">
               <div
                 className={`relative flex items-center border-b ${
-                  errors.email ? "border-rose-600" : "border-gray-300"
+                  errors.senderEmail ? "border-rose-600" : "border-gray-300"
                 }`}
               >
                 <FormLabel>
@@ -115,7 +126,7 @@ export default function ContactForm({ className }: ContactFormProps) {
                 </FormControl>
                 <span
                   className={`${
-                    errors.email
+                    errors.senderEmail
                       ? "hidden"
                       : "absolute bottom-[-0.5px] left-0 h-px w-0 bg-primary transition-all duration-500 group-focus-within:w-full group-hover:w-full"
                   } `}

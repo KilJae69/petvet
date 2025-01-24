@@ -261,7 +261,9 @@
       "phoneMax": "Die Telefonnummer darf nicht länger als 20 Zeichen sein.",
       "subjectMax": "Der Betreff darf nicht länger als 100 Zeichen sein.",
       "messageMax": "Die Nachricht darf nicht länger als 1000 Zeichen sein."
-    }
+    },
+    "successMessage": "Ihre Nachricht wurde erfolgreich gesendet!",
+    "errorMessage": "Etwas ist schief gelaufen. Bitte versuchen Sie es später erneut."
   },
   "AboutUsPage": {
     "h1": "Über uns",

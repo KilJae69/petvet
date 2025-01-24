@@ -7,11 +7,11 @@ export const contactFormSchema = (t: (key: string) => string) =>
       .trim()
       .min(1, { message: t("validation.required") })
       .max(100, { message: t("validation.nameMax") })
-      .refine((value) => /^[a-zA-Z]+$/.test(value), {
+      .refine((value) => /^[a-zA-ZčćšđžČĆŠĐŽ\s]+$/.test(value), {
         message: t("validation.nameLetters"),
       }),
 
-    email: z
+    senderEmail: z
       .string()
       .trim()
       .email({ message: t("validation.emailInvalid") })
@@ -39,3 +39,11 @@ export const contactFormSchema = (t: (key: string) => string) =>
   });
 
 export type TContactFormSchema = z.infer<ReturnType<typeof contactFormSchema>>;
+
+export type ContactFormData = {
+  fullName: string;
+  senderEmail: string;
+  subject: string;
+  message: string;
+  phone:string;
+}

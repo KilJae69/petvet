@@ -251,16 +251,18 @@
     "text-area": "How can we help you? Feel free to get in touch!",
     "button": "Get in touch",
     "validation": {
-    "required": "This field is required.",
-    "nameMax": "First name must be less than 100 characters.",
-    "nameLetters": "Your name must only contain letters.",
-    "emailInvalid": "Invalid email address.",
-    "emailMax": "Email must be less than 100 characters.",
-    "phoneInvalid": "Invalid phone number format.",
-    "phoneMax": "Phone number must be less than 20 characters.",
-    "subjectMax": "Subject must be less than 100 characters.",
-    "messageMax": "Message must be less than 1000 characters."
-  }
+      "required": "This field is required.",
+      "nameMax": "First name must be less than 100 characters.",
+      "nameLetters": "Your name must only contain letters.",
+      "emailInvalid": "Invalid email address.",
+      "emailMax": "Email must be less than 100 characters.",
+      "phoneInvalid": "Invalid phone number format.",
+      "phoneMax": "Phone number must be less than 20 characters.",
+      "subjectMax": "Subject must be less than 100 characters.",
+      "messageMax": "Message must be less than 1000 characters."
+    },
+    "successMessage": "Your message has been sent successfully!",
+    "errorMessage": "Something went wrong. Please try again later."
   },
   "AboutUsPage": {
     "h1": "About Us",
@@ -272,7 +274,7 @@
     "h1-3": "Our Partners",
     "large-heading-3": "Collaborating for a Better Tomorrow",
     "subheading-3": "At PetVet, we believe in the power of collaboration to make a meaningful difference in the lives of animals. Through our partnerships with respected organizations and NGOs, we work together to promote responsible pet ownership, support animal welfare initiatives, and provide essential veterinary care. Our collective efforts focus on improving the quality of life for pets and stray animals alike, ensuring they receive the care, protection, and love they deserve.",
-    "contact-button":"Get in touch",
+    "contact-button": "Get in touch",
     "aboutCards": [
       {
         "id": 1,
@@ -309,7 +311,6 @@
         "description": "Stray animals are not just an issue—they are a consequence of human negligence. At PetVet, we are committed to solving this challenge the right way: by raising awareness and implementing sustainable neutering and sterilization programs. In partnership with NGOs and local authorities, we work tirelessly to prevent further suffering and build a compassionate society where every animal has a chance for a better life."
       }
     }
-
   },
   "Footer": {
     "h2": {
@@ -323,5 +324,4 @@
     "small-text-left": "© 2025 PetVet. All rights reserved.",
     "small-text-right": "Website developed and maintained by"
   }
-  
 }
