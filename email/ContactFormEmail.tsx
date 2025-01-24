@@ -35,7 +35,7 @@ export default function ContactFormEmail({
               <Hr />
               <Text>Email pošiljaoca: {senderEmail}</Text>
               <Hr />
-              <Text>Kontakt broj pošiljaoca: {phone}</Text>
+              <Text>Kontakt broj pošiljaoca:{phone}</Text>
             </Section>
           </Container>
         </Body>
