@@ -68,7 +68,7 @@ export const LanguageSwitcher: React.FC = () => {
               href={`/${lang.code}/${pathname.split("/").slice(2).join("/")}`}
             >
               <button
-                lang={lang.code}
+                // lang={lang.code}
                 onMouseDown={(e) => e.preventDefault()}
                 className={`flex w-full items-center gap-2 px-4 py-2 text-left text-sm group-hover:text-white ${
                   currentLanguageCode === lang.code ? "text-primary" : ""
