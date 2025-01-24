@@ -1,0 +1,314 @@
+{
+  "Metadata": {
+    "titleHome": "PetVet | Startseite",
+    "descriptionHome": "PetVet ist eine kleine Tierarztpraxis in Bihać, Bosnien und Herzegowina, die sich auf die Betreuung von Kleintieren spezialisiert hat. Unser erfahrenes Team bietet mitfühlende und umfassende veterinärmedizinische Dienstleistungen, um die Gesundheit und das Wohlbefinden Ihrer geliebten Haustiere sicherzustellen.",
+    "titleServices": "PetVet | Leistungen",
+    "descriptionServices": "Entdecken Sie das umfassende Leistungsspektrum von PetVet, das alle Bedürfnisse Ihres Haustieres abdeckt. Von ausgewogener Ernährung und professioneller Pflege bis hin zu regelmäßigen Gesundheitschecks und wichtigen Impfungen – unser engagiertes Team steht Ihnen zur Seite, um die Gesundheit und das Glück Ihres Haustieres zu gewährleisten. Erfahren Sie, wie wir Sie dabei unterstützen können, die beste Pflege für Ihren pelzigen Freund zu bieten.",
+    "titleContact": "PetVet | Kontakt",
+    "descriptionContact": "Kontaktieren Sie PetVet für alle Ihre Anliegen rund um die Haustierpflege. Egal, ob Sie Fragen zu unseren Dienstleistungen haben, einen Termin vereinbaren möchten oder Ratschläge zur Tiergesundheit benötigen – unser Team steht Ihnen gerne zur Verfügung. Kontaktieren Sie uns telefonisch, per E-Mail oder besuchen Sie uns für eine persönliche Betreuung und Unterstützung.",
+    "titleAboutUs": "PetVet | Über uns",
+    "descriptionAboutUs": "PetVet ist eine führende Tierklinik in Bihać mit über 5 Jahren Erfahrung in der Bereitstellung hochwertiger tierärztlicher Versorgung. Wir bieten moderne Behandlungen zur Verbesserung der Gesundheit und Lebensqualität Ihrer Haustiere mit Zuverlässigkeit und Professionalität. Besuchen Sie uns, um mehr zu erfahren!"
+  },
+  "NotFound": {
+    "title": "404",
+    "header": "Seite nicht gefunden",
+    "description": "Entschuldigung, wir konnten die gesuchte Seite nicht finden.",
+    "homeLink": "Zur Startseite"
+  },
+  "Header": {
+    "link-home": "Startseite",
+    "link-about": "Über uns",
+    "link-services": "Leistungen",
+    "contact-button": "Kontaktieren Sie uns",
+    "language-button": "Sprache",
+    "language-option-bs": "Bosnisch",
+    "language-option-en": "Englisch",
+    "language-option-de": "Deutsche"
+  },
+  "HeroSection": {
+    "title": {
+      "part1": "Pet",
+      "part2": "Vet",
+      "subtitle": "Ihr freundlicher Tierarzt in der Nachbarschaft"
+    },
+    "description": "Wir legen großen Wert auf die Gesundheit Ihres Haustiers mit Liebe und Fachkompetenz. Begleiten Sie uns auf einer Reise der Fürsorge, bei der Ihr Haustier im Mittelpunkt steht.",
+    "contactButton": "Kontaktieren Sie uns",
+    "successMessage": "Erfolgreiche Behandlung Ihrer Freunde seit 2010"
+  },
+  "ServicesSection": {
+    "singlePageH1": "Leistungen",
+    "marqueeText": {
+      "part1": "Unser Ziel ist es, maßgeschneiderte Pflege anzubieten, um sicherzustellen,",
+      "part2": " dass jedes Haustier die notwendige Aufmerksamkeit erhält",
+      "part3": "und individuell nach Alter und Gesundheitszustand betreut wird."
+    },
+    "h2": "Leistungen",
+    "leadTitle": "Hier sind unsere besonderen",
+    "description": "Die Haustierpflege umfasst eine Vielzahl von Aufgaben, von Fütterung und Fellpflege bis hin zu regelmäßigen Untersuchungen und Impfungen. Unser Team von Fachleuten steht Ihnen zur Seite, um alle Ihre Bedürfnisse in der Haustierpflege zu erfüllen."
+  },
+  "WhyUsSection": {
+    "h2": "Warum wir",
+    "title1": "Individuelle Betreuung für jedes Haustier",
+    "description1": "Wir verstehen, dass jedes Haustier einzigartig ist und unterschiedliche Bedürfnisse hat. Deshalb bieten wir eine maßgeschneiderte Betreuung an, um sicherzustellen, dass Ihr Haustier die bestmögliche Pflege erhält. Unser erfahrenes Team arbeitet eng mit Ihnen zusammen, um einen individuellen Behandlungsplan zu entwickeln, der auf die spezifischen Anforderungen Ihres Haustiers zugeschnitten ist. Ob Routineuntersuchung oder komplexer medizinischer Eingriff – Sie können uns vertrauen, die höchste Versorgungsqualität zu bieten.",
+    "title2": "Bequemlichkeit und Komfort für Haustierbesitzer",
+    "description2": "Wir möchten Ihren Alltag als Haustierbesitzer so angenehm wie möglich gestalten. Unsere Klinik bietet flexible Terminvereinbarungen, eine einfache Online-Buchung und eine einladende Atmosphäre für Sie und Ihr Haustier. Unser freundliches Personal steht Ihnen von der ersten Minute an zur Seite und sorgt für einen reibungslosen und stressfreien Besuch.",
+    "title3": "Umfassende Betreuung und fachkundige Beratung",
+    "description3": "Unsere Klinik bietet ein umfassendes Spektrum an tierärztlichen Dienstleistungen, um die Gesundheit und das Wohlbefinden Ihres Haustiers zu gewährleisten. Von der Präventivpflege und Routineuntersuchungen bis hin zu spezialisierten Behandlungen und Operationen – unser Team ist auf alle Bereiche der Tiergesundheit vorbereitet. Darüber hinaus bieten wir fachkundige Beratung zu Ernährung, Verhalten und Lebensstil, damit Sie fundierte Entscheidungen für Ihr Haustier treffen können.",
+    "title4": "Modernste Ausstattung und fortschrittliche Techniken",
+    "description4": "Unsere Klinik ist mit modernster veterinärmedizinischer Technologie und fortschrittlichen Diagnosetools ausgestattet, um die höchste Versorgungsqualität zu gewährleisten. Wir aktualisieren unsere Techniken und Ausrüstung regelmäßig, um stets auf dem neuesten Stand der Tiermedizin zu sein. So erhält Ihr Haustier die effektivste und modernste Behandlung."
+  },
+  "ProffesionalsSection": {
+    "h2": "Unsere Fachleute"
+  },
+  "TestimonialsSection": {
+    "h2": "Unsere Kundenmeinungen"
+  },
+  "TestimonialsSlider": {
+    "1": {
+      "name": "Azra Toromanović",
+      "subtitle": "Besitzerin der Katze Mili",
+      "text": "Ich bin sehr zufrieden mit dem Service, den ich erhalten habe. Das Personal ist sehr professionell und freundlich. Ich würde diese Klinik jedem empfehlen."
+    },
+    "2": {
+      "name": "Ljilja Doe",
+      "subtitle": "Besitzerin des Hundes Max",
+      "text": "Ich bin sehr zufrieden mit dem Service, den ich erhalten habe. Das Personal ist sehr professionell und freundlich. Ich würde diese Klinik jedem empfehlen."
+    },
+    "3": {
+      "name": "Michael Doe",
+      "subtitle": "Besitzer des Hundes Max",
+      "text": "Ich bin sehr zufrieden mit dem Service, den ich erhalten habe. Das Personal ist sehr professionell und freundlich. Ich würde diese Klinik jedem empfehlen."
+    }
+  },
+  "ServicesList": {
+    "link": "Mehr erfahren",
+    "singlePageTitleAbout": "Über den Service",
+    "singlePageTitleWhat": "Was ist Teil des Services",
+    "singlePageTitleWhy": "Warum Sie den Service nutzen sollten",
+    "GeneralCare": {
+      "title": "Allgemeine Pflege und Behandlung",
+      "description": "Umfassende Gesundheitsversorgung für Haustiere, einschließlich Hunde, Katzen, Reptilien und Nagetiere.",
+      "imageAlt": "Nahaufnahme eines Tierarztes, der sich um ein Haustier kümmert",
+      "aboutSection": "Unser Service für allgemeine Pflege und Behandlung bietet umfassende Gesundheitsversorgung für Haustiere wie Hunde, Katzen, Reptilien und Nagetiere. Wir legen großen Wert darauf, dass Ihre Haustiere durch eine Vielzahl von Dienstleistungen bestmöglich betreut werden.",
+      "whySection": "Die Wahl unserer allgemeinen Pflege und Behandlung stellt sicher, dass Ihr Haustier erstklassige medizinische Versorgung durch erfahrene Tierärzte erhält. Unser ganzheitlicher Ansatz umfasst vorbeugende Maßnahmen und detaillierte Behandlungspläne, die individuell auf jedes Haustier abgestimmt sind. Wir engagieren uns für die Gesundheit und das Glück Ihres Haustiers.",
+      "included": {
+        "1": {
+          "title": "Präanästhetische Untersuchung und chirurgische Planung",
+          "description": "Gründliche Untersuchungen vor chirurgischen Eingriffen zur Sicherstellung der Sicherheit und optimalen Ergebnisse."
+        },
+        "2": {
+          "title": "Schutzimpfungen",
+          "description": "Regelmäßige Impfungen zum Schutz vor verschiedenen Krankheiten und zur langfristigen Gesundheit."
+        },
+        "3": {
+          "title": "Notfallmanagement",
+          "description": "Schnelle und effektive Behandlung bei dringenden medizinischen Problemen."
+        },
+        "4": {
+          "title": "Ausstellung von Pässen und nationale Datenbankregistrierung",
+          "description": "Hilfe bei der Dokumentation für Reisen und die Registrierung bei den Behörden."
+        }
+      }
+    },
+    "Laboratory": {
+      "title": "Labordiagnostik",
+      "description": "Umfassende Labordienstleistungen für präzise Diagnosen und Behandlungsplanung.",
+      "imageAlt": "Nahaufnahme eines Wissenschaftlers mit Mikroskop",
+      "aboutSection": "Unser Labordiagnostik-Service bietet umfangreiche Tests zur genauen Diagnose und effektiven Behandlungsplanung für Ihre Haustiere. Unsere modernen Laboreinrichtungen ermöglichen eine breite Palette an Untersuchungen.",
+      "whySection": "Präzise Diagnosen sind entscheidend für eine erfolgreiche Behandlung. Unsere Labordiagnostik liefert zuverlässige Ergebnisse, damit unsere Tierärzte gezielte Behandlungspläne entwickeln können.",
+      "included": {
+        "1": {
+          "title": "Blutbild (Hämatologische und biochemische Tests)",
+          "description": "Umfassende Blutuntersuchungen zur Beurteilung der allgemeinen Gesundheit."
+        },
+        "2": {
+          "title": "Mikroskopische Untersuchung",
+          "description": "Detaillierte Analyse von Blutabstrichen, Aspiraten, Abstrichen und Sedimenten."
+        },
+        "3": {
+          "title": "Parasitologische Tests",
+          "description": "Erkennung von parasitären Infektionen."
+        },
+        "4": {
+          "title": "Schnelltests (SNAP-Tests)",
+          "description": "Schnelle Tests für Krankheiten wie Parvovirose, Staupe, Herzwurm, Giardien und mehr."
+        }
+      }
+    },
+    "Surgery": {
+      "title": "Chirurgie",
+      "description": "Spezialisierte chirurgische Eingriffe für Weichteil-, Kiefer-, Augen- und Zahnoperationen.",
+      "imageAlt": "Nahaufnahme von Händen, die einen Hund für eine Operation vorbereiten",
+      "aboutSection": "Unser Chirurgie-Service bietet spezialisierte Eingriffe durch erfahrene Tierärzte. Wir sind bestens ausgestattet, um verschiedene Operationen sicher durchzuführen.",
+      "whySection": "Unser erfahrenes chirurgisches Team bietet höchste Versorgungsstandards mit modernen Techniken und Geräten für erfolgreiche Eingriffe und schnelle Genesung.",
+      "included": {
+        "1": {
+          "title": "Weichteilchirurgie",
+          "description": "Chirurgische Eingriffe an inneren Organen und Weichteilen."
+        },
+        "2": {
+          "title": "Kieferchirurgie",
+          "description": "Operationen im Bereich des Kiefers und Gesichts."
+        },
+        "3": {
+          "title": "Augen- und Lidchirurgie",
+          "description": "Eingriffe zur Behandlung von Augen- und Lidproblemen."
+        },
+        "4": {
+          "title": "Zahnchirurgie",
+          "description": "Umfassende Zahnpflege, einschließlich Extraktionen und Operationen."
+        },
+        "5": {
+          "title": "Kastration/Sterilisation",
+          "description": "Sichere und effektive Kastrations- und Sterilisationsdienste."
+        }
+      }
+    },
+    "Reproduction": {
+      "title": "Fortpflanzung und Geburtshilfe",
+      "description": "Fachkundige Betreuung in der Reproduktionsgesundheit und Geburtshilfe.",
+      "imageAlt": "Schlafende Welpen auf einer Tierarztliege",
+      "aboutSection": "Unser Reproduktions- und Geburtshilfe-Service bietet professionelle Unterstützung in allen Phasen des Fortpflanzungszyklus Ihrer Haustiere.",
+      "whySection": "Gesunde Fortpflanzung ist entscheidend für Zuchttiere. Unsere Dienstleistungen garantieren die Sicherheit und Gesundheit von Mutter und Nachwuchs.",
+      "included": {
+        "1": {
+          "title": "Diagnose und Behandlung von urogenitalen Erkrankungen",
+          "description": "Umfassende Betreuung der Fortpflanzungsgesundheit."
+        },
+        "2": {
+          "title": "Bestimmung der fruchtbaren Tage",
+          "description": "Genaue Vorhersage der optimalen Paarungszeit."
+        },
+        "3": {
+          "title": "Hilfe bei der natürlichen Geburt",
+          "description": "Professionelle Unterstützung während der Geburt."
+        },
+        "4": {
+          "title": "Kaiserschnitt",
+          "description": "Sichere chirurgische Geburtshilfe, wenn nötig."
+        }
+      }
+    },
+    "Other": {
+      "title": "Weitere Dienstleistungen",
+      "description": "Zusätzliche Services wie Impfungen und Mikrochip-Implantationen.",
+      "imageAlt": "Pflegeprozess eines kleinen Hundes",
+      "aboutSection": "Zusätzlich zu unseren Hauptleistungen bieten wir eine Vielzahl weiterer wichtiger Services zur Unterstützung der Gesundheit Ihres Haustiers.",
+      "whySection": "Unsere zusätzlichen Services ergänzen unsere Hauptangebote und gewährleisten eine umfassende Betreuung Ihres Haustiers.",
+      "included": {
+        "1": {
+          "title": "Ultraschall-Entfernung von Zahnstein",
+          "description": "Fortschrittliche Zahnpflege zur Erhaltung der Mundgesundheit."
+        },
+        "2": {
+          "title": "Probenentnahme und Einreichung in Referenzlabore",
+          "description": "Präzise Probenentnahme für detaillierte Analysen."
+        },
+        "3": {
+          "title": "Mikrochip-Implantation",
+          "description": "Dauerhafte Identifikation zur Wiederfindung Ihres Haustiers."
+        }
+      }
+    }
+  },
+  "FAQSection": {
+    "heading": "FAQ",
+    "question1": {
+      "question": "Was ist das beste Futter für mein Haustier?",
+      "answer": "Das beste Futter für Ihr Haustier ist eine ausgewogene Ernährung, die alle notwendigen Nährstoffe enthält. Es ist wichtig, sich mit Ihrem Tierarzt zu beraten, um die beste Ernährung für Ihr Haustier zu bestimmen."
+    },
+    "question2": {
+      "question": "Wie oft sollte ich mit meinem Haustier zum Tierarzt gehen?",
+      "answer": "Es wird empfohlen, Ihr Haustier mindestens einmal im Jahr zur Untersuchung zum Tierarzt zu bringen. Wenn Ihr Haustier jedoch krank ist oder gesundheitliche Probleme hat, sollten Sie es so schnell wie möglich zum Tierarzt bringen."
+    },
+    "question3": {
+      "question": "Wie kann ich mein Haustier gesund halten?",
+      "answer": "Um Ihr Haustier gesund zu halten, sollten Sie ihm eine ausgewogene Ernährung, regelmäßige Bewegung und ausreichend frisches Wasser bieten. Es ist auch wichtig, regelmäßige tierärztliche Untersuchungen und Impfungen durchführen zu lassen."
+    },
+    "question4": {
+      "question": "Was soll ich tun, wenn mein Haustier krank ist?",
+      "answer": "Wenn Ihr Haustier krank ist, sollten Sie es so schnell wie möglich zum Tierarzt bringen. Ihr Tierarzt kann die beste Behandlung für die Gesundheit Ihres Haustiers empfehlen."
+    },
+    "question5": {
+      "question": "Wie kann ich verhindern, dass mein Haustier krank wird?",
+      "answer": "Um Krankheiten zu vermeiden, sollten Sie Ihrem Haustier eine ausgewogene Ernährung, regelmäßige Bewegung und ausreichend frisches Wasser bieten. Halten Sie Ihr Haustier auf dem neuesten Stand der Impfungen und besuchen Sie regelmäßig den Tierarzt."
+    }
+  },
+  "ContactPage": {
+    "h1": "Kontaktieren Sie uns",
+    "large-paragraph-right": "PetVet-Dienstleistungen hier verfügbar.",
+    "medium-paragraph-right": "Die Pflege eines Haustiers erfordert einen ganzheitlichen Ansatz, der seine körperliche Gesundheit, sein emotionales Wohlbefinden und sein Glück berücksichtigt.",
+    "woof-paragraph": "Ich bin hier, um zu helfen, rufen Sie mich an!",
+    "phone-h3": "Rufen Sie uns jetzt an",
+    "phone-p": "Rufen Sie uns an, wenn Sie uns brauchen!",
+    "email-h3": "E-Mail-Adresse",
+    "email-p": "Wir antworten in der Regel innerhalb von 24 Stunden",
+    "location-h3": "Unser Standort"
+  },
+  "ContactForm": {
+    "name": "Ihr Vorname",
+    "subject": "Betreff der Nachricht",
+    "text-area": "Wie können wir Ihnen helfen? Kontaktieren Sie uns gerne!",
+    "button": "Kontakt aufnehmen"
+  },
+  "AboutUsPage": {
+    "h1": "Über uns",
+    "large-heading": "Seit über 6 Jahren vertrauenswürdige tierärztliche Versorgung in Bihać",
+    "subheading": "Bei PetVet setzen wir uns für hochwertige tierärztliche Dienstleistungen mit einem Fokus auf Zuverlässigkeit, Professionalität und moderne Pflegetechniken ein.",
+    "h1-2": "Mission & Ziele",
+    "large-heading-2": "Engagement für kontinuierliche Verbesserung in der Tiermedizin",
+    "subheading-2": "Unsere Mission ist es, hochwertige tierärztliche Versorgung basierend auf modernen Verfahren und Expertenwissen anzubieten. Unsere Vision ist es, durch kontinuierliche Verbesserung und Anpassung an globale Standards führend in der Tiermedizin zu werden.",
+    "h1-3": "Unsere Partner",
+    "large-heading-3": "Zusammenarbeit für eine bessere Zukunft",
+    "subheading-3": "Bei PetVet glauben wir an die Kraft der Zusammenarbeit, um das Leben von Tieren positiv zu beeinflussen. Mit Partnerschaften zu renommierten Organisationen und NGOs setzen wir uns für verantwortungsvolle Haustierhaltung und Tierschutz ein.",
+    "contact-button": "Kontakt aufnehmen",
+    "aboutCards": [
+      {
+        "id": 1,
+        "title": "10.000+ zufriedene Kunden",
+        "description": "Unser Engagement für außergewöhnliche Haustierpflege hat das Vertrauen tausender zufriedener Kunden gewonnen, die sich auf uns für die Gesundheit und das Wohlbefinden ihrer Haustiere verlassen."
+      },
+      {
+        "id": 2,
+        "title": "10+ Jahre Erfahrung",
+        "description": "Mit über einem Jahrzehnt Erfahrung bietet unser engagiertes Team hochwertige tierärztliche Dienstleistungen für Haustiere in jeder Lebensphase."
+      },
+      {
+        "id": 3,
+        "title": "Nur Qualitätsprodukte",
+        "description": "Wir wählen sorgfältig hochwertige Produkte aus, die die höchsten Standards erfüllen und Ihrem Haustier ein gesundes Leben ermöglichen."
+      }
+    ],
+    "tabTriggers": {
+      "mission": "Unsere Mission",
+      "vision": "Unsere Vision",
+      "goals": "Unsere Ziele"
+    },
+    "tabs": {
+      "mission": {
+        "title": "Mitfühlende und professionelle tierärztliche Versorgung",
+        "description": "Unsere Mission ist es, außergewöhnliche tierärztliche Dienstleistungen anzubieten, die über die reine Behandlung hinausgehen – wir bieten fürsorgliche Betreuung für Haustiere und ihre Besitzer."
+      },
+      "vision": {
+        "title": "Eine Zukunft der verantwortungsvollen Haustierhaltung schaffen",
+        "description": "Unsere Vision ist es, durch Aufklärung und Bewusstseinsbildung einen Wandel in der Denkweise über verantwortungsvolle Haustierhaltung zu fördern."
+      },
+      "goals": {
+        "title": "Das Problem der Streuner durch Aufklärung und Aktionen lösen",
+        "description": "Streuner sind nicht nur ein Problem, sondern das Ergebnis menschlicher Fahrlässigkeit. Wir setzen uns für nachhaltige Programme zur Kastration und Sterilisation ein."
+      }
+    }
+  },
+  "Footer": {
+    "h2": {
+      "part1": "Erhalten",
+      "part2": "Sie",
+      "part3": "kostenlose Beratungen"
+    },
+    "paragraph": "In unserer Tierklinik bieten Beratungen umfassende Einblicke in die Gesundheit und das Wohlbefinden Ihres Haustiers.",
+    "button": "Kontaktieren Sie uns",
+    "paragraph-secondary": "Begleiten Sie uns auf einer Reise der Fürsorge, bei der Ihr Haustier im Mittelpunkt steht.",
+    "small-text-left": "© 2025 PetVet. Alle Rechte vorbehalten.",
+    "small-text-right": "Website entwickelt und gewartet von"
+  }
+}

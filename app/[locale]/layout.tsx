@@ -6,7 +6,7 @@ import {
   getMessages,
   getTranslations,
   setRequestLocale,
-  // eslint-disable-next-line camelcase
+
   
 } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";

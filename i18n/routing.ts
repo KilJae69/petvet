@@ -3,10 +3,10 @@ import {createNavigation} from 'next-intl/navigation';
  
 export const routing = defineRouting({
   // A list of all locales that are supported
-  locales: ['en',"bs"],
+  locales: ['bs',"en","de"],
  
   // Used when no locale matches
-  defaultLocale: 'en'
+  defaultLocale: 'bs'
 });
  
 // Lightweight wrappers around Next.js' navigation APIs

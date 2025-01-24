@@ -24,17 +24,17 @@ export const LanguageSwitcher: React.FC = () => {
   };
 
   const options: Option[] = [
-    { country: t("language-option-en"), code: "en" },
     { country: t("language-option-bs"), code: "bs" },
-   // { country: t("language-option-de"), code: "de" },
+    { country: t("language-option-en"), code: "en" },
+    { country: t("language-option-de"), code: "de" },
   ];
 
   // Extract the current language code from the pathname
-  const currentLanguageCode = pathname.split("/")[1] || "en"; // Get the first segment or default to 'en'
+  const currentLanguageCode = pathname.split("/")[1] || "bs"; // Get the first segment or default to 'en'
 
   const currentLanguage = options.find(
     (option) => option.code === currentLanguageCode
-  ) || { country: t("language-option-en"), code: "en" };
+  ) || { country: t("language-option-bs"), code: "bs" };
 
   return (
     <DropdownMenu>

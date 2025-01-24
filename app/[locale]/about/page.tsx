@@ -45,7 +45,7 @@ export default async function AboutPage({ params }: AboutUsPageProps) {
   setRequestLocale(locale);
   const t = await getTranslations("AboutUsPage");
   return (
-    <section className="pb-40">
+    <section className="md:pb-40">
       <div className=" gradient-bg relative mt-[calc(var(--header-height)+20px)] rounded-3xl px-5 py-8 text-center shadow-md  ">
         <h1 className="text-clamp-lg font-bold text-white">{t("h1")}</h1>
       </div>
@@ -166,7 +166,7 @@ export default async function AboutPage({ params }: AboutUsPageProps) {
       </Tabs>
 
       <FadeIn>
-        <div className="mx-auto max-w-[1000px] space-y-6 p-5 py-14 text-center ">
+        <div className="mx-auto max-w-[1000px] space-y-6 p-5 md:py-14 text-center ">
           <h2 className="flex items-center justify-center gap-2 font-semibold">
             <PiBoneFill className="size-6 text-primary" />
             <span className="block text-primary">PetVet</span> {t("h1-3")}
