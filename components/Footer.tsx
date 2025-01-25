@@ -61,7 +61,7 @@ export default function Footer() {
             </span>
             <span className="flex items-center gap-3 text-xl">
               <MdEmail className=" text-accent" />
-              petvet@gmail.com
+              petvet.bihac@gmail.com
             </span>
           </div>
 

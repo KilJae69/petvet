@@ -109,7 +109,7 @@ export default async function ContactPage({ params }: ContactPageProps) {
                   <p className="font-semibold">
                     {t("email-p")} <br />
                     <span className="text-primary">
-                      petvet.bihac@bih.net.ba <br /> petvet@gmail.com
+                     petvet.bihac@gmail.com
                     </span>
                   </p>
                 </span>
