@@ -14,8 +14,8 @@ import prof4Img from "@/public/proffesionals/proffesional4-edited.png";
 // #Testimonials images
 
 import testimonial1Img from "@/public/testimonials/azra.jpg";
-import testimonial2Img from "@/public/testimonials/ljilja.jpg";
-import testimonial3Img from "@/public/testimonials/saida.jpg";
+import testimonial2Img from "@/public/testimonials/icon-user.svg";
+// import testimonial3Img from "@/public/testimonials/icon-user.svg";
 
 // #partner logos
 import logoArche4Dogs from "@/public/logos-petvet/logo-arche4dogs.svg";
@@ -191,7 +191,7 @@ export const testimonials = [
     nameKey: "3.name",
     subtitleKey: "3.subtitle",
     textKey: "3.text",
-    imageSrc: testimonial3Img,
+    imageSrc: testimonial2Img,
   },
 ];
 
