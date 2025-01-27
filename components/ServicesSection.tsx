@@ -9,7 +9,7 @@ export default function ServicesSection() {
   return (
     <section className=" pt-8 md:pt-16 lg:pt-24">
       <FadeIn>
-        <p className="text-clamp-md font-semibold leading-7 md:indent-52">
+        <p className="text-clamp-md text-center font-semibold leading-7 ">
           {t("marqueeText.part1")}{" "}
           <span className="text-primary">{t("marqueeText.part2")}</span>{" "}
           {t("marqueeText.part3")}

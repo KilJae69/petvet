@@ -17,7 +17,7 @@ export default function FaqSection() {
           <h2 className="text-clamp-lg font-semibold ">{t("heading")}</h2>
         </FadeIn>
 
-        <FadeInStagger className=" min-h-[670px] w-full md:min-h-[600px] lg:max-w-[60%]">
+        <FadeInStagger className=" min-h-[550px] w-full md:min-h-[600px] lg:max-w-[60%]">
           <Accordion type="single" className="flex flex-col gap-4" collapsible>
             {faqData.map((faq) => (
               <FadeIn

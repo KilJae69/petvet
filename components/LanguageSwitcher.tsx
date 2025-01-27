@@ -17,6 +17,7 @@ import React from "react";
 export const LanguageSwitcher: React.FC = () => {
   const pathname = usePathname(); // Get the full pathname
   const t = useTranslations("Header");
+  
 
   type Option = {
     country: string;

@@ -48,23 +48,23 @@ export default async function ContactPage({ params }: ContactPageProps) {
       </div>
 
       <div className="relative my-10 flex flex-col-reverse gap-5 rounded-3xl bg-white shadow-md sm:p-4 lg:flex-row-reverse lg:justify-around xl:gap-20">
-          <FadeIn >
-        <div className="flex flex-1 flex-col gap-10 lg:max-w-[650px]">
-          <div className="space-y-6 p-5 ">
-            <h2 className="flex items-center gap-2 font-semibold">
-              <PiBoneFill className="size-6 text-primary" />
-              <span className="text-primary">PetVet</span> {t("h1")}
-            </h2>
-            <p className="text-clamp-lg font-bold">
-              {t("large-paragraph-right")}
-            </p>
-            <p className="text-clamp-sm text-black/70">
-              {t("medium-paragraph-right")}
-            </p>
-          </div>
+        <FadeIn>
+          <div className="flex flex-1 flex-col gap-10 lg:max-w-[650px]">
+            <div className="space-y-6 p-5 ">
+              <h2 className="flex items-center gap-2 font-semibold">
+                <PiBoneFill className="size-6 text-primary" />
+                <span className="text-primary">PetVet</span> {t("h1")}
+              </h2>
+              <p className="text-clamp-lg font-bold">
+                {t("large-paragraph-right")}
+              </p>
+              <p className="text-clamp-sm text-black/70">
+                {t("medium-paragraph-right")}
+              </p>
+            </div>
             <ContactForm className="lg:max-w-[650px]" />
-        </div>
-          </FadeIn>
+          </div>
+        </FadeIn>
 
         <div className="m-5 flex flex-col items-center gap-5 rounded-3xl bg-slate-100 p-4 sm:py-10 md:flex-row lg:flex-col lg:px-16">
           <div className="gradient-bg relative aspect-square w-full max-w-[400px] rounded-full ">
@@ -95,7 +95,8 @@ export default async function ContactPage({ params }: ContactPageProps) {
                   <p className="font-semibold">
                     {t("phone-p")} <br />
                     <span className="text-primary">
-                      (037)222-660 <br /> (061)415-098
+                      <a href="tel:+38737222660">(037)222-660</a> <br />{" "}
+                      <a href="tel:+38761415098">(061)415-098</a>
                     </span>
                   </p>
                 </span>
@@ -109,7 +110,9 @@ export default async function ContactPage({ params }: ContactPageProps) {
                   <p className="font-semibold">
                     {t("email-p")} <br />
                     <span className="text-primary">
-                     petvet.bihac@gmail.com
+                      <a href="mailto:petvet.bihac@gmail.com">
+                        petvet.bihac@gmail.com
+                      </a>
                     </span>
                   </p>
                 </span>

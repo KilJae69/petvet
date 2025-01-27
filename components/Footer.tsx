@@ -57,11 +57,11 @@ export default function Footer() {
           <div>
             <span className="flex items-center gap-3 text-xl">
               <FaPhone className=" text-accent" />
-              +387 37 222 660
+              <a href="tel:+38737222660">(037)222-660</a>
             </span>
             <span className="flex items-center gap-3 text-xl">
               <MdEmail className=" text-accent" />
-              petvet.bihac@gmail.com
+              <a href="mailto:petvet.bihac@gmail.com">petvet.bihac@gmail.com</a>
             </span>
           </div>
 
