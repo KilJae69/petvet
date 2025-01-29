@@ -18,6 +18,7 @@ import { Locale, locales } from "@/lib/locales";
 import { Metadata } from "next";
 import { routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";
+import Head from "next/head";
 
 const poppins = Poppins({
   weight: ["100", "200", "400", "600", "700"],
@@ -65,8 +66,20 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
   // side is the easiest way to get started
   const messages = await getMessages();
 
+  const canonicalUrl = `https://veterinar-bihac.ba/${locale}`;
+
   return (
     <html lang={locale}>
+      <Head>
+        {/* ✅ Canonical tag for SEO */}
+        <link rel="canonical" href={canonicalUrl} />
+
+        {/* ✅ `hreflang` for multilingual SEO */}
+        <link rel="alternate" hrefLang="bs" href="https://veterinar-bihac.ba/bs/" />
+        <link rel="alternate" hrefLang="en" href="https://veterinar-bihac.ba/en/" />
+        <link rel="alternate" hrefLang="de" href="https://veterinar-bihac.ba/de/" />
+        <link rel="alternate" hrefLang="x-default" href="https://veterinar-bihac.ba/" />
+      </Head>
       <body className={`relative ${poppins.className} bg-slate-100`}>
         <NextIntlClientProvider messages={messages}>
           <Header />

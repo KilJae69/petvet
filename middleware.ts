@@ -1,19 +1,30 @@
-import createMiddleware from 'next-intl/middleware';
-import {routing} from './i18n/routing';
- 
-export default createMiddleware(routing);
- 
+import { NextRequest, NextResponse } from "next/server";
+import createMiddleware from "next-intl/middleware";
+import { routing } from "./i18n/routing";
+
+// Function to check if the request is from Googlebot
+function isGooglebot(req: NextRequest): boolean {
+  const userAgent = req.headers.get("user-agent") || "";
+  return /Googlebot|Googlebot-Image|Mediapartners-Google|APIs-Google/i.test(
+    userAgent
+  );
+}
+
+export default function middleware(req: NextRequest): NextResponse {
+  // ✅ Allow Googlebot to access localized pages without redirection
+  if (isGooglebot(req)) {
+    return NextResponse.rewrite(new URL("/bs", req.url));
+  }
+
+  // ✅ Apply normal locale routing for other users
+  return createMiddleware(routing)(req);
+}
+
+// ✅ Ensure middleware is applied correctly
 export const config = {
   matcher: [
-    // Enable a redirect to a matching locale at the root
-    '/',
-
-    // Set a cookie to remember the previous locale for
-    // all requests that have a locale prefix
-    '/(bs|en|de)/:path*',
-
-    // Enable redirects that add missing locales
-    // (e.g. `/pathnames` -> `/en/pathnames`)
-    '/((?!_next|_vercel|.*\\..*).*)'
-  ]
+    "/", // Homepage
+    "/(bs|en|de)/:path*", // Localized paths
+    "/((?!_next|_vercel|.*\\..*).*)", // Exclude Next.js internal paths
+  ],
 };
