@@ -9,7 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         languages: {
           en: 'https://www.veterinar-bihac.ba/en',
           de: 'https://www.veterinar-bihac.ba/de',
-          bs: 'https://www.veterinar-bihac.ba/bs'
+         // bs: 'https://www.veterinar-bihac.ba/bs'
         },
       },
     },
@@ -20,7 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         languages: {
             en: 'https://www.veterinar-bihac.ba/en/about',
             de: 'https://www.veterinar-bihac.ba/de/about',
-            bs: 'https://www.veterinar-bihac.ba/bs/about'
+          //  bs: 'https://www.veterinar-bihac.ba/bs/about'
           },
       },
     },
@@ -31,7 +31,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         languages: {
             en: 'https://www.veterinar-bihac.ba/en/contact',
             de: 'https://www.veterinar-bihac.ba/de/contact',
-            bs: 'https://www.veterinar-bihac.ba/bs/contact'
+          //  bs: 'https://www.veterinar-bihac.ba/bs/contact'
           },
       },
     },
@@ -42,7 +42,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         languages: {
             en: 'https://www.veterinar-bihac.ba/en/services',
             de: 'https://www.veterinar-bihac.ba/de/services',
-            bs: 'https://www.veterinar-bihac.ba/bs/services'
+          //  bs: 'https://www.veterinar-bihac.ba/bs/services'
           },
       },
     },
@@ -53,7 +53,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         languages: {
             en: 'https://www.veterinar-bihac.ba/en/services/general-care-and-treatment',
             de: 'https://www.veterinar-bihac.ba/de/services/general-care-and-treatment',
-            bs: 'https://www.veterinar-bihac.ba/bs/services/general-care-and-treatment'
+          //  bs: 'https://www.veterinar-bihac.ba/bs/services/general-care-and-treatment'
           },
       },
     },
@@ -64,7 +64,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         languages: {
             en: 'https://www.veterinar-bihac.ba/en/services/laboratory-diagnostics',
             de: 'https://www.veterinar-bihac.ba/de/services/laboratory-diagnostics',
-            bs: 'https://www.veterinar-bihac.ba/bs/services/laboratory-diagnostics'
+          //  bs: 'https://www.veterinar-bihac.ba/bs/services/laboratory-diagnostics'
           },
       },
     },
@@ -75,7 +75,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         languages: {
             en: 'https://www.veterinar-bihac.ba/en/services/surgery',
             de: 'https://www.veterinar-bihac.ba/de/services/surgery',
-            bs: 'https://www.veterinar-bihac.ba/bs/services/surgery'
+          //  bs: 'https://www.veterinar-bihac.ba/bs/services/surgery'
           },
       },
     },
@@ -86,7 +86,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         languages: {
             en: 'https://www.veterinar-bihac.ba/en/services/reproduction-and-obstetrics',
             de: 'https://www.veterinar-bihac.ba/de/services/reproduction-and-obstetrics',
-            bs: 'https://www.veterinar-bihac.ba/bs/services/reproduction-and-obstetrics'
+          //  bs: 'https://www.veterinar-bihac.ba/bs/services/reproduction-and-obstetrics'
           },
       },
     },
@@ -97,7 +97,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         languages: {
             en: 'https://www.veterinar-bihac.ba/en/services/other-services',
             de: 'https://www.veterinar-bihac.ba/de/services/other-services',
-            bs: 'https://www.veterinar-bihac.ba/bs/services/other-services'
+          //  bs: 'https://www.veterinar-bihac.ba/bs/services/other-services'
           },
       },
     },
