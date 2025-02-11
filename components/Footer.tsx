@@ -85,10 +85,15 @@ export default function Footer() {
 
         <div className="flex w-full flex-col justify-between gap-3 py-4 text-xs md:flex-row lg:text-sm">
           <p>{t("small-text-left")}</p>
-          <p>
+          <a
+            target="__blank"
+            rel="noopener noreferrer"
+            href="https://spark-dev-studio.com/"
+            className="underline"
+          >
             {t("small-text-right")}{" "}
             <span className="text-yellow-400">Spark</span>Studio
-          </p>
+          </a>
         </div>
       </div>
     </footer>
