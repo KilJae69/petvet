@@ -1,6 +1,7 @@
 import Image from "next/image";
 import logoImg from "@/public/petvet-logo.png";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
+
 
 export default function Logo() {
   return (
