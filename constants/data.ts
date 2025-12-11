@@ -26,6 +26,7 @@ import logoHundefreunde from "@/public/logos-petvet/logo-hundefreunde-europa.png
 import logoMaxFoundation from "@/public/logos-petvet/logo-max-foundation.svg";
 import logoNiemeshund from "@/public/logos-petvet/logo-niemenshund.png";
 import logoSelenhunde from "@/public/logos-petvet/logo-selenhunde.png";
+import logoHope4Dogs from "@/public/logos-petvet/hope4dogs.png";
 
 // #Gallery images
 import gallery1Img from "@/public/gallery/gallery1.jpg";
@@ -116,11 +117,11 @@ export const partners = [
     imgSrc: logoSelenhunde,
     href: "https://seelenhunde.at/",
   },
-  // {id:8,
-  //  title: "Max Foundation",
-  //  imgSrc: logoMaxFoundation,
-  //  href: "https://www.maxfoundation.de/homepage.html#:~:text=The%20Max%20Foundation%20is%20a,in%20Bihac%2C%20Bosnia%20and%20Herzegovina.",
-  // },
+   {id:8,
+    title: "Hope4Dogs",
+    imgSrc: logoHope4Dogs,
+    href: "https://www.facebook.com/p/Hopefordogsbih-61577694668164/",
+   },
 ];
 
 export const aboutCards = [
